@@ -1,6 +1,7 @@
 .Logo {
 	display: flex;
 	justify-content: center;
+	align-self: flex-start;
 	padding: 16px;
 }
 
