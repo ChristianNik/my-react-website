@@ -3,6 +3,8 @@ import Icon from './Icon';
 
 import iconbarStyle from './Iconbar.module.css';
 
+import moduleName from '../images/bx-x.svg';
+
 function Iconbar(props) {
 	const styleOverwrite = {
 		alignSelf: props.position ? props.position : ''
@@ -13,9 +15,9 @@ function Iconbar(props) {
 			className={iconbarStyle.Iconbar}
 			style={styleOverwrite ? styleOverwrite : ''}
 		>
-			<Icon />
-			<Icon />
-			<Icon />
+			<Icon src={moduleName} />
+			<Icon src={moduleName} />
+			<Icon src={moduleName} />
 		</div>
 	);
 }

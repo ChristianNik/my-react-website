@@ -1,12 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import iconStyle from './Icon.module.css';
 
 function Icon(props) {
-	console.log(props.size);
-
 	const imageStyle = {
-		width: props.size ? props.size.w : '',
-		height: props.size ? props.size.h : '10px'
+		width: props.size ? props.size.w : 'auto',
+		height: props.size ? props.size.h : 'auto'
 	};
 
 	return (
@@ -22,3 +22,11 @@ function Icon(props) {
 }
 
 export default Icon;
+
+Icon.propTypes = {
+	src: PropTypes.string.isRequired,
+	size: PropTypes.shape({
+		w: PropTypes.string,
+		h: PropTypes.string
+	})
+};
