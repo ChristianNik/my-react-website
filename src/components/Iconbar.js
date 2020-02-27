@@ -1,9 +1,6 @@
 import React from 'react';
-import Icon from './Icon';
 
 import iconbarStyle from './Iconbar.module.css';
-
-import moduleName from '../images/bx-x.svg';
 
 function Iconbar(props) {
 	const styleOverwrite = {
@@ -15,9 +12,7 @@ function Iconbar(props) {
 			className={iconbarStyle.Iconbar}
 			style={styleOverwrite ? styleOverwrite : ''}
 		>
-			<Icon src={moduleName} />
-			<Icon src={moduleName} />
-			<Icon src={moduleName} />
+			{props.children}
 		</div>
 	);
 }
