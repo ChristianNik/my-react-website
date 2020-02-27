@@ -1,0 +1,10 @@
+.Logo {
+	display: flex;
+	justify-content: center;
+	padding: 16px;
+}
+
+.Logo__Container {
+	width: 32px;
+	height: 32px;
+}

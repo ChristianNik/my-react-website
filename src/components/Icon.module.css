@@ -1,0 +1,12 @@
+.Icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 50px;
+	background-color: #363636;
+}
+
+.Icon:hover {
+	background-color: #303030af;
+}

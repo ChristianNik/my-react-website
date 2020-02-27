@@ -1,0 +1,4 @@
+.Iconbar {
+	display: flex;
+	flex-direction: column;
+}
