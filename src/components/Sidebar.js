@@ -1,11 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+// Components
 import Iconbar from './Iconbar';
 import Icon from './Icon';
-
-import sidebarStyle from './Sidebar.module.css';
 import Logo from './Logo';
-import image from '../images/bx-x.svg';
-import { Link } from 'react-router-dom';
+// Styles
+import sidebarStyle from './Sidebar.module.css';
+// Icons
+import tmpIcon from '../icons/bx-x.svg';
+import homeIcon from '../icons/bxs-home.svg';
+import aboutIcon from '../icons/bxs-user.svg';
+import skillsIcon from '../icons/bxs-cog.svg';
+import kontaktIcon from '../icons/bxs-envelope.svg';
 
 function Sidebar() {
 	return (
@@ -15,19 +21,39 @@ function Sidebar() {
 				<ul>
 					<li>
 						<Link to='/'>
-							<Icon src={image} />
+							<Icon src={homeIcon} width='30px' height='30px' />
 						</Link>
 					</li>
 					<li>
 						<Link to='/about'>
-							<Icon src={image} />
+							<Icon src={aboutIcon} width='30px' height='30px' />
+						</Link>
+					</li>
+					<li>
+						<Link to='/'>
+							<Icon src={skillsIcon} width='30px' height='30px' />
+						</Link>
+					</li>
+					<li>
+						<Link to='/'>
+							<Icon src={kontaktIcon} width='30px' height='30px' />
 						</Link>
 					</li>
 				</ul>
 			</Iconbar>
 			<Iconbar position='end'>
-				<Icon src={image} />
-				<Icon src={image} />
+				<ul>
+					<li>
+						<Link to='/'>
+							<Icon src={tmpIcon} />
+						</Link>
+					</li>
+					<li>
+						<Link to='/about'>
+							<Icon src={tmpIcon} />
+						</Link>
+					</li>
+				</ul>
 			</Iconbar>
 		</div>
 	);

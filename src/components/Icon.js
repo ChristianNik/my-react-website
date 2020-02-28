@@ -5,8 +5,8 @@ import iconStyle from './Icon.module.css';
 
 function Icon(props) {
 	const imageStyle = {
-		width: props.size ? props.size.w : 'auto',
-		height: props.size ? props.size.h : 'auto'
+		width: props.width ? props.width : 'auto',
+		height: props.height ? props.height : 'auto'
 	};
 
 	return (
@@ -25,8 +25,6 @@ export default Icon;
 
 Icon.propTypes = {
 	src: PropTypes.string.isRequired,
-	size: PropTypes.shape({
-		w: PropTypes.string,
-		h: PropTypes.string
-	})
+	width: PropTypes.string,
+	height: PropTypes.string
 };
