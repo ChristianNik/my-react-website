@@ -20,7 +20,7 @@ function App() {
 				<Route
 					render={({ location }) => (
 						<TransitionGroup>
-							<CSSTransition key={location.key} timeout={600} classNames='fade'>
+							<CSSTransition key={location.key} timeout={300} classNames='fade'>
 								<Switch location={location}>
 									<Route exact path='/' component={Home} />
 									<Route path='/about' component={About} />
