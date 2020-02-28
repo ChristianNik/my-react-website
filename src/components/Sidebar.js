@@ -7,11 +7,11 @@ import Logo from './Logo';
 // Styles
 import sidebarStyle from './Sidebar.module.css';
 // Icons
-import tmpIcon from '../icons/bx-x.svg';
-import homeIcon from '../icons/bxs-home.svg';
-import aboutIcon from '../icons/bxs-user.svg';
-import skillsIcon from '../icons/bxs-cog.svg';
-import kontaktIcon from '../icons/bxs-envelope.svg';
+import tmpIcon from '../images/icons/bx-x.svg';
+import homeIcon from '../images/icons/bxs-home.svg';
+import aboutIcon from '../images/icons/bxs-user.svg';
+import skillsIcon from '../images/icons/bxs-cog.svg';
+import kontaktIcon from '../images/icons/bxs-envelope.svg';
 
 function Sidebar() {
 	return (
