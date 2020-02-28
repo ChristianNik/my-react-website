@@ -12,6 +12,8 @@ import homeIcon from '../images/icons/bxs-home.svg';
 import aboutIcon from '../images/icons/bxs-user.svg';
 import skillsIcon from '../images/icons/bxs-cog.svg';
 import kontaktIcon from '../images/icons/bxs-envelope.svg';
+import githubIcon from '../images/icons/bxl-github-light.svg';
+import linkedinIcon from '../images/icons/bxl-linkedin.svg';
 
 function Sidebar() {
 	return (
@@ -45,12 +47,12 @@ function Sidebar() {
 				<ul>
 					<li>
 						<Link to='/'>
-							<Icon src={tmpIcon} />
+							<Icon src={linkedinIcon} width='16px' height='16px' />
 						</Link>
 					</li>
 					<li>
 						<Link to='/about'>
-							<Icon src={tmpIcon} />
+							<Icon src={githubIcon} width='16px' height='16px' />
 						</Link>
 					</li>
 				</ul>
