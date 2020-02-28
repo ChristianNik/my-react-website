@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
 	return (
-		<div>
+		<div className='page'>
 			<h1 style={{ color: '#fffffe' }}>About</h1>
 		</div>
 	);
