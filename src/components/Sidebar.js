@@ -12,6 +12,7 @@ import homeIcon from '../images/icons/bxs-home.svg';
 import aboutIcon from '../images/icons/bxs-user.svg';
 import skillsIcon from '../images/icons/bxs-cog.svg';
 import kontaktIcon from '../images/icons/bxs-envelope.svg';
+import projectsIcon from '../images/icons/bxs-briefcase.svg';
 import githubIcon from '../images/icons/bxl-github-light.svg';
 import linkedinIcon from '../images/icons/bxl-linkedin.svg';
 
@@ -34,6 +35,11 @@ function Sidebar() {
 					<li>
 						<Link to='/skills'>
 							<Icon src={skillsIcon} width='30px' height='30px' />
+						</Link>
+					</li>
+					<li>
+						<Link to='/projects'>
+							<Icon src={projectsIcon} width='30px' height='30px' />
 						</Link>
 					</li>
 					<li>

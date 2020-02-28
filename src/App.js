@@ -8,6 +8,7 @@ import Home from './Routes/Home';
 import About from './Routes/About';
 import Skills from './Routes/Skills';
 import Contact from './Routes/Contact';
+import Projects from './Routes/Projects';
 // Styles
 import './App.css';
 // Icons
@@ -26,6 +27,7 @@ function App() {
 									<Route path='/about' component={About} />
 									<Route path='/skills' component={Skills} />
 									<Route path='/contact' component={Contact} />
+									<Route path='/projects' component={Projects} />
 								</Switch>
 							</CSSTransition>
 						</TransitionGroup>
