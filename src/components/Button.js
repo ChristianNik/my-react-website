@@ -6,7 +6,9 @@ function Button(props) {
 		border: '1px solid #3DA9FC',
 		backgroundColor: 'transparent',
 		color: '#3DA9FC',
-		padding: '5px 7px'
+		padding: '11px 16px',
+		textTransform: 'uppercase',
+		letterSpacing: '2.14px'
 	};
 
 	const defaultStyle = {
