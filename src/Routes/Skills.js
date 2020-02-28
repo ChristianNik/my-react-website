@@ -2,7 +2,7 @@ import React from 'react';
 
 function Skills() {
 	return (
-		<div>
+		<div className='page'>
 			<h1 style={{ color: '#fffffe' }}>Skills</h1>
 		</div>
 	);

@@ -5,3 +5,29 @@
 	grid-template-columns: auto 1fr;
 	font-family: 'Roboto', sans-serif;
 }
+
+.page {
+	position: absolute;
+	top: 0;
+	left: 64px;
+	right: 0;
+	bottom: 0;
+}
+
+.fade-appear,
+.fade-enter {
+	opacity: 0;
+	z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+	opacity: 0;
+	transition: opacity 300ms linear 150ms;
+}
+.fade-exit {
+	opacity: 1;
+}
+.fade-exit.fade-exit-active {
+	opacity: 0;
+	transition: opacity 150ms linear;
+}
