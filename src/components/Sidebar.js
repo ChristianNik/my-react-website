@@ -30,12 +30,12 @@ function Sidebar() {
 						</Link>
 					</li>
 					<li>
-						<Link to='/'>
+						<Link to='/skills'>
 							<Icon src={skillsIcon} width='30px' height='30px' />
 						</Link>
 					</li>
 					<li>
-						<Link to='/'>
+						<Link to='/contact'>
 							<Icon src={kontaktIcon} width='30px' height='30px' />
 						</Link>
 					</li>
