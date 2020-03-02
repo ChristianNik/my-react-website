@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // Components
 import Iconbar from './Iconbar';
-import Icon from './Icon';
 import Logo from './Logo';
+import LinkGroup from './LinkGroup';
+import LinkItem from './LinkItem';
 // Styles
 import sidebarStyle from './Sidebar.module.css';
 // Icons
@@ -11,59 +12,51 @@ import tmpIcon from '../images/icons/bx-x.svg';
 import homeIcon from '../images/icons/bxs-home.svg';
 import aboutIcon from '../images/icons/bxs-user.svg';
 import skillsIcon from '../images/icons/bxs-cog.svg';
-import kontaktIcon from '../images/icons/bxs-envelope.svg';
 import projectsIcon from '../images/icons/bxs-briefcase.svg';
+import kontaktIcon from '../images/icons/bxs-envelope.svg';
 import githubIcon from '../images/icons/bxl-github-light.svg';
 import linkedinIcon from '../images/icons/bxl-linkedin.svg';
+import logoImg from '../images/Logo 1@2x.png';
 
 function Sidebar() {
 	return (
-		<div className={sidebarStyle.Sidebar}>
-			<Logo />
-			<Iconbar position='center'>
-				<ul>
-					<li>
-						<Link to='/'>
-							<Icon src={homeIcon} width='30px' height='30px' />
-						</Link>
-					</li>
-					<li>
-						<Link to='/about'>
-							<Icon src={aboutIcon} width='30px' height='30px' />
-						</Link>
-					</li>
-					<li>
-						<Link to='/skills'>
-							<Icon src={skillsIcon} width='30px' height='30px' />
-						</Link>
-					</li>
-					<li>
-						<Link to='/projects'>
-							<Icon src={projectsIcon} width='30px' height='30px' />
-						</Link>
-					</li>
-					<li>
-						<Link to='/contact'>
-							<Icon src={kontaktIcon} width='30px' height='30px' />
-						</Link>
-					</li>
-				</ul>
-			</Iconbar>
-			<Iconbar position='end'>
-				<ul>
-					<li>
-						<Link to='/'>
-							<Icon src={linkedinIcon} width='16px' height='16px' />
-						</Link>
-					</li>
-					<li>
-						<Link to='/about'>
-							<Icon src={githubIcon} width='16px' height='16px' />
-						</Link>
-					</li>
-				</ul>
-			</Iconbar>
-		</div>
+		<nav className={sidebarStyle.Sidebar}>
+			<LinkGroup>
+				<LinkItem
+					to='/'
+					icon={logoImg}
+					iconWidth='32px'
+					iconHeight='32px'
+					text='logo'
+					noActiveStyle
+				/>
+			</LinkGroup>
+			<LinkGroup position='center'>
+				<LinkItem to='/' icon={homeIcon} text='home' />
+				<LinkItem to='/about' icon={aboutIcon} text='about' />
+				<LinkItem to='/skills' icon={skillsIcon} text='skills' />
+				<LinkItem to='/projects' icon={projectsIcon} text='projects' />
+				<LinkItem to='/contact' icon={kontaktIcon} text='contact' />
+			</LinkGroup>
+			<LinkGroup position='end'>
+				<LinkItem
+					to='/'
+					icon={linkedinIcon}
+					text='linkedin'
+					iconWidth='18px'
+					iconHeight='18px'
+					noActiveStyle
+				/>
+				<LinkItem
+					to='/about'
+					icon={githubIcon}
+					text='github'
+					iconWidth='18px'
+					iconHeight='18px'
+					noActiveStyle
+				/>
+			</LinkGroup>
+		</nav>
 	);
 }
 
