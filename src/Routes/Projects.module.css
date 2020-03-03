@@ -1,0 +1,18 @@
+.Projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
+	padding: 0px 100px;
+}
+.Projects__title {
+	font-size: 3.5em;
+}
+.Projects__subtitle {
+	font-size: 1.2em;
+	color: #717171;
+	letter-spacing: 0.4px;
+	font-family: 'Source Code Pro';
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
