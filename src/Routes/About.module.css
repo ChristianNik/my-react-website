@@ -1,14 +1,14 @@
-.Home {
+.About {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: end;
 	padding: 0px 100px;
 }
-.Home__title {
+.About__title {
 	font-size: 3.5em;
 }
-.Home__subtitle {
+.About__subtitle {
 	font-size: 1.2em;
 	color: #717171;
 	letter-spacing: 0.4px;
