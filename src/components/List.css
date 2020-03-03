@@ -1,0 +1,14 @@
+.List {
+	padding: 15px 0px;
+}
+.List__title {
+	margin-bottom: 7px;
+}
+.List__list {
+	list-style: none;
+}
+
+.List__list__item {
+	color: #717171;
+	font-family: 'Source Code Pro';
+}
