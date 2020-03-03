@@ -14,8 +14,8 @@ function ProjectItem(props) {
 			<div></div>
 			<p className='ProjectItem__discription'>{props.discription}</p>
 			<div className='ProjectItem__controls'>
-				{!props.noDemoAvailable ? <Button title='DEMO' /> : ''}
-				{!props.noCodeAvailable ? <Button title='CODE' /> : ''}
+				{!props.noDemoAvailable ? <Button type='primary' title='DEMO' /> : ''}
+				{!props.noCodeAvailable ? <Button type='secondary' title='CODE' /> : ''}
 			</div>
 		</div>
 	);

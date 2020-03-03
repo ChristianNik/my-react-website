@@ -18,7 +18,7 @@ function Contact() {
 				<Input title='E-Mail' />
 				<Input title='Nachricht' />
 
-				<Button title='SENDEN' />
+				<Button type='primary' title='SENDEN' />
 			</form>
 			<div>
 				<Icon src={kontaktIcon} />
