@@ -1,0 +1,28 @@
+.Button {
+	cursor: pointer;
+	padding: 11px 16px;
+	text-transform: uppercase;
+	letter-spacing: 2.14px;
+	border: none;
+}
+
+.Button__primary {
+	background-color: #3da9fc;
+	color: #252628;
+	font-weight: bold;
+}
+.Button__secondary {
+	color: #3da9fc;
+	border: 1px solid #3da9fc;
+	background-color: transparent;
+}
+
+.Button__tertiary {
+	color: #3da9fc;
+	border: none;
+	background-color: transparent;
+}
+
+.Button:hover {
+	filter: brightness(0.5);
+}

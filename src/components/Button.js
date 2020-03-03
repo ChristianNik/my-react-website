@@ -1,22 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+// Styles
+import buttonStyle from './Button.module.css';
+// Icons
+// Components
 function Button(props) {
-	const secondaryStyle = {
-		border: '1px solid #3DA9FC',
-		backgroundColor: 'transparent',
-		color: '#3DA9FC',
-		padding: '11px 16px',
-		textTransform: 'uppercase',
-		letterSpacing: '2.14px'
-	};
-
-	const defaultStyle = {
-		cursor: 'pointer',
-		...secondaryStyle
-	};
-
-	return <button style={defaultStyle}>{props.title}</button>;
+	switch (props.type) {
+		case 'primary':
+			return (
+				<button
+					className={`${buttonStyle.Button} ${buttonStyle.Button__primary}`}
+				>
+					{props.title}
+				</button>
+			);
+		case 'secondary':
+			return (
+				<button
+					className={`${buttonStyle.Button} ${buttonStyle.Button__secondary}`}
+				>
+					{props.title}
+				</button>
+			);
+		case 'tertiary':
+			return (
+				<button
+					className={`${buttonStyle.Button} ${buttonStyle.Button__tertiary}`}
+				>
+					{props.title}
+				</button>
+			);
+		default:
+			return (
+				<button className={`${buttonStyle.Button} ${buttonStyle.Button}`}>
+					{props.title}
+				</button>
+			);
+	}
 }
 
 export default Button;
