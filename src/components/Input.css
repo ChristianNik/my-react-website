@@ -1,0 +1,14 @@
+.Input {
+	border: 0;
+	padding: 9px 10px;
+	background-color: #343537;
+	color: #fffffe;
+	font-family: 'Source Code Pro';
+}
+
+.Input::placeholder {
+	color: #717171;
+}
+
+.Input__Container {
+}
