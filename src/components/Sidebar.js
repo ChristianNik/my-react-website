@@ -8,53 +8,50 @@ import LinkItem from './LinkItem';
 // Styles
 import sidebarStyle from './Sidebar.module.css';
 // Icons
-import tmpIcon from '../images/icons/bx-x.svg';
-import homeIcon from '../images/icons/bxs-home.svg';
-import aboutIcon from '../images/icons/bxs-user.svg';
-import skillsIcon from '../images/icons/bxs-cog.svg';
-import projectsIcon from '../images/icons/bxs-briefcase.svg';
-import kontaktIcon from '../images/icons/bxs-envelope.svg';
-import githubIcon from '../images/icons/bxl-github-light.svg';
-import linkedinIcon from '../images/icons/bxl-linkedin.svg';
 import logoImg from '../images/Logo 1@2x.png';
+import {
+	HomeIcon,
+	AboutIcon,
+	SkillsIcon,
+	ProjectsIcon,
+	ContactIcon,
+	LinkedInIcon,
+	GithubIcon,
+	LogoIcon
+} from '../components/Icons';
 
 function Sidebar() {
 	return (
 		<nav className={sidebarStyle.Sidebar}>
 			<LinkGroup>
-				<LinkItem
-					to='/'
-					icon={logoImg}
-					iconWidth='32px'
-					iconHeight='32px'
-					text='logo'
-					noActiveStyle
-				/>
+				<LinkItem to='/' text='logo' noActiveStyle>
+					<LogoIcon width={32} />
+				</LinkItem>
 			</LinkGroup>
 			<LinkGroup position='center'>
-				<LinkItem to='/' icon={homeIcon} text='home' />
-				<LinkItem to='/about' icon={aboutIcon} text='about' />
-				<LinkItem to='/skills' icon={skillsIcon} text='skills' />
-				<LinkItem to='/projects' icon={projectsIcon} text='projects' />
-				<LinkItem to='/contact' icon={kontaktIcon} text='contact' />
+				<LinkItem to='/' text='home'>
+					<HomeIcon fill='#707070' />
+				</LinkItem>
+				<LinkItem to='/about' text='about'>
+					<AboutIcon fill='#707070' />
+				</LinkItem>
+				<LinkItem to='/skills' text='skills'>
+					<SkillsIcon fill='#707070' />
+				</LinkItem>
+				<LinkItem to='/projects' text='projects'>
+					<ProjectsIcon fill='#707070' />
+				</LinkItem>
+				<LinkItem to='/contact' text='contact'>
+					<ContactIcon fill='#707070' />
+				</LinkItem>
 			</LinkGroup>
 			<LinkGroup position='end'>
-				<LinkItem
-					to='/'
-					icon={linkedinIcon}
-					text='linkedin'
-					iconWidth='18px'
-					iconHeight='18px'
-					noActiveStyle
-				/>
-				<LinkItem
-					to='/about'
-					icon={githubIcon}
-					text='github'
-					iconWidth='18px'
-					iconHeight='18px'
-					noActiveStyle
-				/>
+				<LinkItem to='/' text='linkedin' noActiveStyle>
+					<LinkedInIcon width={20} fill='#707070' />
+				</LinkItem>
+				<LinkItem to='/about' text='github' noActiveStyle>
+					<GithubIcon width={20} fill='#707070' />
+				</LinkItem>
 			</LinkGroup>
 		</nav>
 	);

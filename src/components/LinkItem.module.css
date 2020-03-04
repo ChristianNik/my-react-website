@@ -17,5 +17,9 @@
 
 .LinkItem__link__active {
 	transition: all 300ms;
-	color: red;
+}
+
+.LinkItem__link__active svg {
+	transition: all 300ms;
+	fill: #3da9fc;
 }

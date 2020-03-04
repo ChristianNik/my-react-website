@@ -25,7 +25,7 @@ function LinkItem(props) {
 						height={props.iconHeight ? props.iconHeight : '28px'}
 					/>
 				) : (
-					props.text
+					props.children || props.text
 				)}
 			</NavLink>
 		</li>
