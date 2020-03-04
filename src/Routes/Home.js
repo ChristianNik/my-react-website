@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '../components/Button';
 // Components
-
 // Styles
 import homeStyle from './Home.module.css';
 // Icons
