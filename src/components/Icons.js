@@ -9,9 +9,11 @@ export function HomeIcon(props) {
 			height={props.width || '24'}
 			style={props.style}
 			viewBox='0 0 24 24'
+			className={`svg-icon ${props.className || ''}`}
+			fill={props.fill}
 		>
 			<path
-				fill={props.fill || '#fffffe'}
+				className={`svg-icon ${props.className || ''}`}
 				d='M21.743,12.331l-9-10c-0.379-0.422-1.107-0.422-1.486,0l-9,10c-0.265,0.293-0.331,0.715-0.17,1.076	C2.247,13.768,2.605,14,3,14h2v7c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1v-4h4v4c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1v-7h2	c0.395,0,0.753-0.232,0.913-0.593C22.074,13.046,22.008,12.625,21.743,12.331z'
 			/>
 		</svg>
@@ -26,9 +28,10 @@ export function AboutIcon(props) {
 			height={props.width || '24'}
 			style={props.style}
 			viewBox='0 0 24 24'
+			fill={props.fill || '#fffffe'}
 		>
 			<path
-				fill={props.fill || '#fffffe'}
+				className={`svg-icon ${props.className || ''}`}
 				d='M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h1 1 14H20z'
 			/>
 		</svg>
@@ -43,9 +46,10 @@ export function SkillsIcon(props) {
 			height={props.width || '24'}
 			style={props.style}
 			viewBox='0 0 24 24'
+			fill={props.fill || '#fffffe'}
 		>
 			<path
-				fill={props.fill || '#fffffe'}
+				className={`svg-icon ${props.className || ''}`}
 				d='M2.344,15.271l2,3.46c0.276,0.478,0.888,0.642,1.366,0.365l1.396-0.806c0.58,0.457,1.221,0.832,1.895,1.112V21 c0,0.552,0.447,1,1,1h4c0.553,0,1-0.448,1-1v-1.598c0.674-0.28,1.314-0.655,1.895-1.112l1.396,0.806 c0.477,0.275,1.091,0.11,1.366-0.365l2-3.46c0.275-0.476,0.11-1.091-0.365-1.366l-1.372-0.793C19.973,12.743,20,12.371,20,12 s-0.027-0.743-0.081-1.112l1.372-0.793c0.476-0.275,0.641-0.89,0.365-1.366l-2-3.46c-0.276-0.478-0.888-0.642-1.366-0.365 l-1.396,0.806C16.314,5.253,15.674,4.877,15,4.598V3c0-0.552-0.447-1-1-1h-4C9.447,2,9,2.448,9,3v1.598 c-0.674,0.28-1.314,0.655-1.895,1.112L5.71,4.904C5.231,4.627,4.62,4.791,4.344,5.269l-2,3.46c-0.275,0.476-0.11,1.091,0.365,1.366 l1.372,0.793C4.027,11.257,4,11.629,4,12s0.027,0.743,0.081,1.112l-1.372,0.793C2.233,14.18,2.068,14.795,2.344,15.271z M12,8 c2.206,0,4,1.794,4,4s-1.794,4-4,4s-4-1.794-4-4S9.794,8,12,8z'
 			/>
 		</svg>
@@ -60,9 +64,10 @@ export function ProjectsIcon(props) {
 			height={props.width || '24'}
 			style={props.style}
 			viewBox='0 0 24 24'
+			fill={props.fill || '#fffffe'}
 		>
 			<path
-				fill={props.fill || '#fffffe'}
+				className={`svg-icon ${props.className || ''}`}
 				d='M20 6h-3V4c0-1.103-.897-2-2-2H9C7.897 2 7 2.897 7 4v2H4C2.897 6 2 6.897 2 8v3h20V8C22 6.897 21.103 6 20 6zM9 4h6v2H9V4zM14 14h-4v-2H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-8V14z'
 			/>
 		</svg>
@@ -77,9 +82,10 @@ export function ContactIcon(props) {
 			height={props.width || '24'}
 			style={props.style}
 			viewBox='0 0 24 24'
+			fill={props.fill || '#fffffe'}
 		>
 			<path
-				fill={props.fill || '#fffffe'}
+				className={`svg-icon ${props.className || ''}`}
 				d='M20,4H4C2.896,4,2,4.896,2,6v12c0,1.104,0.896,2,2,2h16c1.104,0,2-0.896,2-2V6C22,4.896,21.104,4,20,4z M20,8.7l-8,5.334 L4,8.7V6.297l8,5.333l8-5.333V8.7z'
 			/>
 		</svg>
@@ -94,9 +100,10 @@ export function LinkedInIcon(props) {
 			height={props.width || '24'}
 			style={props.style}
 			viewBox='0 0 24 23.959'
+			fill={props.fill || '#fffffe'}
 		>
 			<ellipse
-				fill={props.fill || '#fffffe'}
+				className={`svg-icon ${props.className || ''}`}
 				cx='3.089'
 				cy='3.089'
 				rx='3.089'
@@ -104,7 +111,7 @@ export function LinkedInIcon(props) {
 				transform='translate(0 0)'
 			/>
 			<path
-				fill={props.fill || '#fffffe'}
+				className={`svg-icon ${props.className || ''}`}
 				d='M11.182,8.979V26.117h4.963V17.642c0-2.236.392-4.4,2.978-4.4,2.551,0,2.582,2.557,2.582,4.543v8.335h4.965v-9.4c0-4.617-.927-8.165-5.96-8.165a5.166,5.166,0,0,0-4.7,2.767h-.067V8.979Zm-8.087,0H8.066V26.117H3.1Z'
 				transform='translate(-2.671 -2.159)'
 			/>
@@ -120,9 +127,10 @@ export function GithubIcon(props) {
 			height={props.width || '24'}
 			style={props.style}
 			viewBox='0 0 29.948 29.456'
+			fill={props.fill || '#fffffe'}
 		>
 			<path
-				fill={props.fill || '#fffffe'}
+				className={`svg-icon ${props.className || ''}`}
 				d='M17.026,2a15.12,15.12,0,0,0-4.734,29.431c.749.136,1.019-.329,1.019-.728,0-.359-.012-1.31-.017-2.568-4.166.911-5.046-2.026-5.046-2.026A3.981,3.981,0,0,0,6.587,23.9c-1.359-.937.1-.916.1-.916A3.139,3.139,0,0,1,8.984,24.54,3.173,3.173,0,0,0,13.34,25.8a3.248,3.248,0,0,1,.953-2.02C10.97,23.4,7.475,22.1,7.475,16.312a5.879,5.879,0,0,1,1.537-4.05,5.474,5.474,0,0,1,.149-4s1.257-.407,4.117,1.546a14.056,14.056,0,0,1,7.495,0c2.861-1.955,4.117-1.546,4.117-1.546a5.449,5.449,0,0,1,.149,4,5.842,5.842,0,0,1,1.537,4.05c0,5.8-3.5,7.078-6.834,7.452a3.635,3.635,0,0,1,1.013,2.795c0,2.02-.018,3.649-.018,4.144,0,.4.267.874,1.031.725A15.12,15.12,0,0,0,17.026,2Z'
 				transform='translate(-2.052 -2)'
 			/>
