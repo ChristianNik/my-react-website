@@ -1,9 +1,15 @@
 .Button {
+	display: inline-block;
 	cursor: pointer;
 	padding: 11px 16px;
 	text-transform: uppercase;
 	letter-spacing: 2.14px;
 	border: none;
+	text-decoration: none;
+	font-size: 13.3333px;
+	font-family: 'Arial';
+	color: inherit;
+	text-align: center;
 }
 
 .Button__primary {

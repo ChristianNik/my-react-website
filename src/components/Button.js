@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 // Styles
 import buttonStyle from './Button.module.css';
 // Icons
@@ -8,33 +9,34 @@ function Button(props) {
 	switch (props.type) {
 		case 'primary':
 			return (
-				<button
+				<Link
+					to={props.href}
 					className={`${buttonStyle.Button} ${buttonStyle.Button__primary}`}
 				>
 					{props.title}
-				</button>
+				</Link>
 			);
 		case 'secondary':
 			return (
-				<button
+				<Link
 					className={`${buttonStyle.Button} ${buttonStyle.Button__secondary}`}
 				>
 					{props.title}
-				</button>
+				</Link>
 			);
 		case 'tertiary':
 			return (
-				<button
+				<Link
 					className={`${buttonStyle.Button} ${buttonStyle.Button__tertiary}`}
 				>
 					{props.title}
-				</button>
+				</Link>
 			);
 		default:
 			return (
-				<button className={`${buttonStyle.Button} ${buttonStyle.Button}`}>
+				<Link className={`${buttonStyle.Button} ${buttonStyle.Button}`}>
 					{props.title}
-				</button>
+				</Link>
 			);
 	}
 }
