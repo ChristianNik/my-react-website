@@ -10,24 +10,34 @@ import linkItemStyle from './LinkItem.module.css';
 function LinkItem(props) {
 	return (
 		<li className={linkItemStyle.LinkItem}>
-			<NavLink
-				exact
-				activeClassName={
-					props.noActiveStyle ? '' : linkItemStyle.LinkItem__link__active
-				}
-				className={linkItemStyle.LinkItem__link}
-				to={props.to}
-			>
-				{props.icon ? (
-					<Icon
-						src={props.icon}
-						width={props.iconWidth ? props.iconWidth : '28px'}
-						height={props.iconHeight ? props.iconHeight : '28px'}
-					/>
-				) : (
-					props.children || props.text
-				)}
-			</NavLink>
+			{props.href ? (
+				<a
+					className={linkItemStyle.LinkItem__link}
+					target='_blank'
+					href={props.href}
+				>
+					{props.children}
+				</a>
+			) : (
+				<NavLink
+					exact
+					activeClassName={
+						props.noActiveStyle ? '' : linkItemStyle.LinkItem__link__active
+					}
+					className={linkItemStyle.LinkItem__link}
+					to={props.to}
+				>
+					{props.icon ? (
+						<Icon
+							src={props.icon}
+							width={props.iconWidth ? props.iconWidth : '28px'}
+							height={props.iconHeight ? props.iconHeight : '28px'}
+						/>
+					) : (
+						props.children || props.text
+					)}
+				</NavLink>
+			)}
 		</li>
 	);
 }
@@ -35,7 +45,7 @@ function LinkItem(props) {
 export default LinkItem;
 
 LinkItem.propTypes = {
-	to: PropTypes.string.isRequired,
+	to: PropTypes.string,
 	icon: PropTypes.string,
 	iconWidth: PropTypes.string,
 	iconHeight: PropTypes.string,

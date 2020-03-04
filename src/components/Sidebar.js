@@ -21,36 +21,43 @@ import {
 } from '../components/Icons';
 
 function Sidebar() {
+	const START_ICON_SIZE = 36;
+	const CENTER_ICON_SIZE = 28;
+	const END_ICON_SIZE = 18;
+
 	return (
 		<nav className={sidebarStyle.Sidebar}>
 			<LinkGroup>
 				<LinkItem to='/' text='logo' noActiveStyle>
-					<LogoIcon width={32} />
+					<LogoIcon width={START_ICON_SIZE} />
 				</LinkItem>
 			</LinkGroup>
 			<LinkGroup position='center'>
 				<LinkItem to='/' text='home'>
-					<HomeIcon fill='#707070' />
+					<HomeIcon width={CENTER_ICON_SIZE} fill='#707070' />
 				</LinkItem>
 				<LinkItem to='/about' text='about'>
-					<AboutIcon fill='#707070' />
+					<AboutIcon width={CENTER_ICON_SIZE} fill='#707070' />
 				</LinkItem>
 				<LinkItem to='/skills' text='skills'>
-					<SkillsIcon fill='#707070' />
+					<SkillsIcon width={CENTER_ICON_SIZE} fill='#707070' />
 				</LinkItem>
 				<LinkItem to='/projects' text='projects'>
-					<ProjectsIcon fill='#707070' />
+					<ProjectsIcon width={CENTER_ICON_SIZE} fill='#707070' />
 				</LinkItem>
 				<LinkItem to='/contact' text='contact'>
-					<ContactIcon fill='#707070' />
+					<ContactIcon width={CENTER_ICON_SIZE} fill='#707070' />
 				</LinkItem>
 			</LinkGroup>
 			<LinkGroup position='end'>
-				<LinkItem to='/' text='linkedin' noActiveStyle>
-					<LinkedInIcon width={20} fill='#707070' />
+				<LinkItem
+					href='https://www.linkedin.com/in/christian-nikel-3537a619b'
+					text='linkedin'
+				>
+					<LinkedInIcon width={END_ICON_SIZE} fill='#707070' />
 				</LinkItem>
-				<LinkItem to='/about' text='github' noActiveStyle>
-					<GithubIcon width={20} fill='#707070' />
+				<LinkItem href='https://github.com/ChristianNik' text='github'>
+					<GithubIcon width={END_ICON_SIZE} fill='#707070' />
 				</LinkItem>
 			</LinkGroup>
 		</nav>
