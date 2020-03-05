@@ -5,36 +5,75 @@ import { Link } from 'react-router-dom';
 import buttonStyle from './Button.module.css';
 // Icons
 // Components
+
 function Button(props) {
 	switch (props.type) {
 		case 'primary':
-			return (
+			return props.href ? (
+				<a
+					target='_blank'
+					href={props.href}
+					className={`${buttonStyle.Button} ${buttonStyle.Button__primary}`}
+				>
+					{props.title}
+				</a>
+			) : (
 				<Link
-					to={props.href}
+					to={props.href || ''}
 					className={`${buttonStyle.Button} ${buttonStyle.Button__primary}`}
 				>
 					{props.title}
 				</Link>
 			);
+
 		case 'secondary':
-			return (
+			return props.href ? (
+				<a
+					target='_blank'
+					href={props.href}
+					className={`${buttonStyle.Button} ${buttonStyle.Button__secondary}`}
+				>
+					{props.title}
+				</a>
+			) : (
 				<Link
+					to={props.href || ''}
 					className={`${buttonStyle.Button} ${buttonStyle.Button__secondary}`}
 				>
 					{props.title}
 				</Link>
 			);
 		case 'tertiary':
-			return (
+			return props.href ? (
+				<a
+					target='_blank'
+					href={props.href}
+					className={`${buttonStyle.Button} ${buttonStyle.Button__tertiary}`}
+				>
+					{props.title}
+				</a>
+			) : (
 				<Link
+					to={props.href || ''}
 					className={`${buttonStyle.Button} ${buttonStyle.Button__tertiary}`}
 				>
 					{props.title}
 				</Link>
 			);
 		default:
-			return (
-				<Link className={`${buttonStyle.Button} ${buttonStyle.Button}`}>
+			return props.href ? (
+				<a
+					target='_blank'
+					href={props.href}
+					className={`${buttonStyle.Button} ${buttonStyle.Button__primary}`}
+				>
+					{props.title}
+				</a>
+			) : (
+				<Link
+					to={props.href || ''}
+					className={`${buttonStyle.Button} ${buttonStyle.Button}`}
+				>
 					{props.title}
 				</Link>
 			);

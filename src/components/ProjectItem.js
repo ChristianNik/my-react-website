@@ -14,8 +14,16 @@ function ProjectItem(props) {
 			<div></div>
 			<p className='ProjectItem__discription'>{props.discription}</p>
 			<div className='ProjectItem__controls'>
-				{!props.noDemoAvailable ? <Button type='primary' title='DEMO' /> : ''}
-				{!props.noCodeAvailable ? <Button type='secondary' title='CODE' /> : ''}
+				{props.hrefDemo ? (
+					<Button href={props.hrefDemo} type='primary' title='DEMO' />
+				) : (
+					''
+				)}
+				{props.hrefCode ? (
+					<Button href={props.hrefCode} type='secondary' title='CODE' />
+				) : (
+					''
+				)}
 			</div>
 		</div>
 	);
@@ -26,6 +34,6 @@ export default ProjectItem;
 ProjectItem.propTypes = {
 	title: PropTypes.string.isRequired,
 	discription: PropTypes.string,
-	noDemoAvailable: PropTypes.bool,
-	noCodeAvailable: PropTypes.bool
+	hrefCode: PropTypes.string,
+	hrefDemo: PropTypes.string
 };

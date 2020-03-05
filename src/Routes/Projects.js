@@ -18,16 +18,18 @@ function Projects() {
 				eine dazugehörige Website programmiert werden. Mithilfe der Software
 				können Administratoren Buchungen, Buslinien, Busflotten und Fahrpläne
 				ändern und anlegen.'
-					noDemoAvailable
+					hrefCode='https://github.com/ChristianNik/Reisebus-Verwaltungs-Clitent-v3'
 				/>
 				<ProjectItem
 					title='Private Website v1'
 					discription='Meine erste private Website. Erstellt mit Standard HTML, CSS & JavaScript.'
-					noCodeAvailable
+					hrefDemo='http://projects.chnikel.de/oo622cy9ukqyu9kmzygtm'
+					hrefCode='https://github.com/ChristianNik/personal-website-v1'
 				/>
 				<ProjectItem
-					title='Private Website v1'
-					discription='Meine erste private Website. Erstellt mit Standard HTML, CSS & JavaScript.'
+					title='Private Website v2'
+					discription='Meine neue private Website. Erstellt mit ReactJS.'
+					hrefCode='https://github.com/ChristianNik/my-react-website'
 				/>
 			</ProjectGroup>
 		</div>
