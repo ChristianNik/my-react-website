@@ -7,81 +7,38 @@ import buttonStyle from './Button.module.css';
 // Components
 
 function Button(props) {
+	let nameOfClass = '';
 	switch (props.type) {
 		case 'primary':
-			return props.href ? (
-				<a
-					target='_blank'
-					href={props.href}
-					className={`${buttonStyle.Button} ${buttonStyle.Button__primary}`}
-				>
-					{props.title}
-				</a>
-			) : (
-				<Link
-					to={props.href || ''}
-					className={`${buttonStyle.Button} ${buttonStyle.Button__primary}`}
-				>
-					{props.title}
-				</Link>
-			);
-
+			nameOfClass = buttonStyle.Button__primary;
+			break;
 		case 'secondary':
-			return props.href ? (
-				<a
-					target='_blank'
-					href={props.href}
-					className={`${buttonStyle.Button} ${buttonStyle.Button__secondary}`}
-				>
-					{props.title}
-				</a>
-			) : (
-				<Link
-					to={props.href || ''}
-					className={`${buttonStyle.Button} ${buttonStyle.Button__secondary}`}
-				>
-					{props.title}
-				</Link>
-			);
+			nameOfClass = buttonStyle.Button__secondary;
+			break;
 		case 'tertiary':
-			return props.href ? (
-				<a
-					target='_blank'
-					href={props.href}
-					className={`${buttonStyle.Button} ${buttonStyle.Button__tertiary}`}
-				>
-					{props.title}
-				</a>
-			) : (
-				<Link
-					to={props.href || ''}
-					className={`${buttonStyle.Button} ${buttonStyle.Button__tertiary}`}
-				>
-					{props.title}
-				</Link>
-			);
-		default:
-			return props.href ? (
-				<a
-					target='_blank'
-					href={props.href}
-					className={`${buttonStyle.Button} ${buttonStyle.Button__primary}`}
-				>
-					{props.title}
-				</a>
-			) : (
-				<Link
-					to={props.href || ''}
-					className={`${buttonStyle.Button} ${buttonStyle.Button}`}
-				>
-					{props.title}
-				</Link>
-			);
+			nameOfClass = buttonStyle.Button__tertiary;
+			break;
 	}
+	return props.href ? (
+		<a
+			target='_blank'
+			href={props.href}
+			className={`${buttonStyle.Button} ${nameOfClass}`}
+		>
+			{props.text}
+		</a>
+	) : (
+		<Link to={props.to} className={`${buttonStyle.Button} ${nameOfClass}`}>
+			{props.text}
+		</Link>
+	);
 }
 
 export default Button;
 
 Button.propTypes = {
-	title: PropTypes.string.isRequired
+	type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
+	href: PropTypes.string,
+	to: PropTypes.string,
+	text: PropTypes.string
 };

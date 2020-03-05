@@ -15,12 +15,12 @@ function ProjectItem(props) {
 			<p className='ProjectItem__discription'>{props.discription}</p>
 			<div className='ProjectItem__controls'>
 				{props.hrefDemo ? (
-					<Button href={props.hrefDemo} type='primary' title='DEMO' />
+					<Button href={props.hrefDemo} type='primary' text='DEMO' />
 				) : (
 					''
 				)}
 				{props.hrefCode ? (
-					<Button href={props.hrefCode} type='secondary' title='CODE' />
+					<Button href={props.hrefCode} type='secondary' text='CODE' />
 				) : (
 					''
 				)}
