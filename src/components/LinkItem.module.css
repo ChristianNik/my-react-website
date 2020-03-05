@@ -8,11 +8,14 @@
 }
 
 .LinkItem__link {
-	padding: 5px 0px;
+	padding: 7px 0px;
 	width: 100%;
 	text-align: center;
 	text-decoration: none;
 	color: inherit;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 }
 
 .LinkItem__link__active {
