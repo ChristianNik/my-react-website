@@ -15,7 +15,7 @@ function Home() {
 			<p className={homeStyle.Home__subtitle}>
 				Informationstechnischer Assistent / Junior Frontend Entwickler
 			</p>
-			<Button type='primary' text='Meine Projekte' to='/projects' />
+			<Button type='secondary' text='Meine Projekte' to='/projects' />
 		</div>
 	);
 }

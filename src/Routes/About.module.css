@@ -16,3 +16,12 @@
 	margin-top: 10px;
 	margin-bottom: 40px;
 }
+
+.About__Photo {
+	width: 300px;
+	height: 394px;
+	background-image: url('../images/Bewerbungs Foto Dark.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}

@@ -8,13 +8,15 @@ function List(props) {
 		<div className='List'>
 			<h3 className='List__title'>{props.title}</h3>
 			<ul className='List__list'>
-				{props.items.map(item => {
-					return (
-						<li className='List__list__item' key={Math.random()}>
-							{item}
-						</li>
-					);
-				})}
+				{props.items
+					? props.items.map(item => {
+							return (
+								<li className='List__list__item' key={Math.random()}>
+									{item}
+								</li>
+							);
+					  })
+					: ''}
 			</ul>
 		</div>
 	);
