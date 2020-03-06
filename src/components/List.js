@@ -16,13 +16,23 @@ function List(props) {
 					gridGap: props.gab || ''
 				}}
 			>
-				{props.children.length > 1
-					? props.children
-						? props.children.map(item => {
-								return <li key={Math.random()}>{item}</li>;
-						  })
-						: ''
-					: props.children}
+				{props.children
+					? props.children.length > 1
+						? props.children
+							? props.children.map(item => {
+									return <li key={Math.random()}>{item}</li>;
+							  })
+							: ''
+						: props.children
+					: props.items
+					? props.items.map(item => {
+							return (
+								<li className='List__list__item' key={Math.random()}>
+									{item}
+								</li>
+							);
+					  })
+					: ''}
 			</ul>
 		</div>
 	);
