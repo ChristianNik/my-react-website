@@ -11,9 +11,8 @@ function List(props) {
 			<ul
 				className='List__list'
 				style={{
-					display: 'grid',
-					gridAutoFlow: props.flow || '',
-					gridGap: props.gab || ''
+					display: 'flex',
+					flexWrap: 'wrap'
 				}}
 			>
 				{props.children
