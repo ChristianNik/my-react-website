@@ -16,7 +16,7 @@ function About() {
 				Webseiten. Ich wohne in der Nähe von Köln und bin gerne Unterwegs.
 			</p>
 			<div className={aboutSyle.About__Photo}></div>
-			<List title='Hobbys' flow='column' gab={15}>
+			<List className={aboutSyle.About__Hobbys} title='Hobbys'>
 				<IconWithText text='Joggen' />
 				<IconWithText text='Programmieren' />
 			</List>
