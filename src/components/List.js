@@ -6,7 +6,7 @@ import './List.css';
 // Icons
 function List(props) {
 	return (
-		<div className='List'>
+		<div className={`List ${props.className || ''}`}>
 			<h3 className='List__title'>{props.title}</h3>
 			<ul
 				className='List__list'

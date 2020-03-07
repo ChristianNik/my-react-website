@@ -28,7 +28,10 @@ function Button(props) {
 			{props.text}
 		</a>
 	) : (
-		<Link to={props.to} className={`${buttonStyle.Button} ${nameOfClass}`}>
+		<Link
+			to={props.to || ''}
+			className={`${buttonStyle.Button} ${nameOfClass}`}
+		>
 			{props.text}
 		</Link>
 	);
