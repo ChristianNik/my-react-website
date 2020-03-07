@@ -12,7 +12,8 @@ function List(props) {
 				className='List__list'
 				style={{
 					display: 'flex',
-					flexWrap: 'wrap'
+					flexWrap: 'wrap',
+					flexDirection: props.items ? 'column' : 'row'
 				}}
 			>
 				{props.children
