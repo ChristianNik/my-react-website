@@ -42,7 +42,6 @@ function ProjectItem(props) {
 				) : (
 					''
 				)}
-				{console.log(isOpen)}
 			</div>
 		</div>
 	);

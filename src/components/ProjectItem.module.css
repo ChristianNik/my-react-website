@@ -16,13 +16,13 @@
 }
 
 .ProjectItem:hover:not(.ProjectItem__active) {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .ProjectItem:hover:not(.ProjectItem__active) .ProjectItem__title {
-  -webkit-transform: scale(0.95) translateX(-7px);
-          transform: scale(0.95) translateX(-7px);
+  -webkit-transform: scale(0.98) translateX(-7px);
+          transform: scale(0.98) translateX(-7px);
 }
 
 .ProjectItem__title {
@@ -41,8 +41,8 @@
   transition: all 300ms;
   color: #717171;
   font-family: 'Source Code Pro';
-  -webkit-transform: scale(1) translateX(-101%) translateY(-50%);
-          transform: scale(1) translateX(-101%) translateY(-50%);
+  -webkit-transform: translateX(-101%) translateY(-50%);
+          transform: translateX(-101%) translateY(-50%);
 }
 
 .ProjectItem__controls {
@@ -53,11 +53,11 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
-  -webkit-transform: scale(1) translateX(-101%);
-          transform: scale(1) translateX(-101%);
+  -webkit-transform: translateX(-101%);
+          transform: translateX(-101%);
 }
 
 .ProjectItem .ProjectItem__active {
-  -webkit-transform: scale(1) translateY(0);
-          transform: scale(1) translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
