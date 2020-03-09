@@ -20,26 +20,30 @@ function ProjectItem(props) {
 		>
 			<h3 className={style.ProjectItem__title}>{props.title}</h3>
 			<img className={style.ProjectItem__image} src={props.image} alt='' />
-			{isOpen ? (
-				<>
-					<p className={style.ProjectItem__discription}>{props.discription}</p>
-					<div className={style.ProjectItem__controls}>
-						{props.hrefDemo ? (
-							<Button href={props.hrefDemo} type='primary' text='DEMO' />
-						) : (
-							''
-						)}
-						{props.hrefCode ? (
-							<Button href={props.hrefCode} type='secondary' text='CODE' />
-						) : (
-							''
-						)}
-						{console.log(isOpen)}
-					</div>
-				</>
-			) : (
-				''
-			)}
+			<p
+				className={`${style.ProjectItem__discription} ${
+					isOpen ? style.ProjectItem__active : ''
+				}`}
+			>
+				{props.discription}
+			</p>
+			<div
+				className={`${style.ProjectItem__controls} ${
+					isOpen ? style.ProjectItem__active : ''
+				}`}
+			>
+				{props.hrefDemo ? (
+					<Button href={props.hrefDemo} type='primary' text='DEMO' />
+				) : (
+					''
+				)}
+				{props.hrefCode ? (
+					<Button href={props.hrefCode} type='secondary' text='CODE' />
+				) : (
+					''
+				)}
+				{console.log(isOpen)}
+			</div>
 		</div>
 	);
 }
