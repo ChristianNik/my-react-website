@@ -1,30 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 // Styles
-import './ProjectItem.css';
+import style from './ProjectItem.module.css';
 // Icons
 // Components
 import Button from '../components/Button';
 
 function ProjectItem(props) {
+	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div className='ProjectItem'>
-			<h3>{props.title}</h3>
-			<img className='ProjectItem__image' src={props.image} alt='' />
-			<p className='ProjectItem__discription'>{props.discription}</p>
-			<div className='ProjectItem__controls'>
-				{props.hrefDemo ? (
-					<Button href={props.hrefDemo} type='primary' text='DEMO' />
-				) : (
-					''
-				)}
-				{props.hrefCode ? (
-					<Button href={props.hrefCode} type='secondary' text='CODE' />
-				) : (
-					''
-				)}
-			</div>
+		<div
+			onClick={() => {
+				setIsOpen(!isOpen);
+			}}
+			className={`${style.ProjectItem} ${
+				isOpen ? style.ProjectItem__active : ''
+			}`}
+		>
+			<h3 className={style.ProjectItem__title}>{props.title}</h3>
+			<img className={style.ProjectItem__image} src={props.image} alt='' />
+			{isOpen ? (
+				<>
+					<p className={style.ProjectItem__discription}>{props.discription}</p>
+					<div className={style.ProjectItem__controls}>
+						{props.hrefDemo ? (
+							<Button href={props.hrefDemo} type='primary' text='DEMO' />
+						) : (
+							''
+						)}
+						{props.hrefCode ? (
+							<Button href={props.hrefCode} type='secondary' text='CODE' />
+						) : (
+							''
+						)}
+						{console.log(isOpen)}
+					</div>
+				</>
+			) : (
+				''
+			)}
 		</div>
 	);
 }
