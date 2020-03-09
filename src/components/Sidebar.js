@@ -45,9 +45,11 @@ function Sidebar() {
 				<LinkItem to='/projects' text='projects'>
 					<ProjectsIcon width={CENTER_ICON_SIZE} fill='#707070' />
 				</LinkItem>
+				{/*
 				<LinkItem to='/contact' text='contact'>
 					<ContactIcon width={CENTER_ICON_SIZE} fill='#707070' />
 				</LinkItem>
+			*/}
 			</LinkGroup>
 			<LinkGroup position='end'>
 				<LinkItem

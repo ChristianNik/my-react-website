@@ -10,19 +10,6 @@ import ProjectItem from '../components/ProjectItem';
 import ProjectGroup from '../components/ProjectGroup';
 
 function Projects() {
-	const fakeAPIData = [
-		{
-			title: 'Reisebus Verwaltungs Client',
-			image: busSystemImage,
-			discription: `Innerhalb von 3 Monaten sollten eine Reisebusverwaltungssoftware und
-						eine dazugehörige Website programmiert werden. Mithilfe der Software
-						können Administratoren Buchungen, Buslinien, Busflotten und Fahrpläne
-						ändern und anlegen.`,
-			hrefCode:
-				'https://github.com/ChristianNik/Reisebus-Verwaltungs-Clitent-v3'
-		}
-	];
-
 	return (
 		<div className={`${projectsStyle.Projects} page`}>
 			<h1 className={projectsStyle.Projects__title}>Projekte</h1>
