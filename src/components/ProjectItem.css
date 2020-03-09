@@ -3,8 +3,14 @@
 	grid-template-rows: auto auto 1fr auto;
 	grid-gap: 10px;
 	width: 300px;
+	/*
 	background-color: #343537;
 	padding: 20px;
+	*/
+}
+
+.ProjectItem__image {
+	max-width: 100%;
 }
 
 .ProjectItem__discription {

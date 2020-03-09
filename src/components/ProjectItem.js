@@ -11,7 +11,7 @@ function ProjectItem(props) {
 	return (
 		<div className='ProjectItem'>
 			<h3>{props.title}</h3>
-			<div></div>
+			<img className='ProjectItem__image' src={props.image} alt='' />
 			<p className='ProjectItem__discription'>{props.discription}</p>
 			<div className='ProjectItem__controls'>
 				{props.hrefDemo ? (
