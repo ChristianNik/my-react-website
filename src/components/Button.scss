@@ -1,0 +1,37 @@
+$primary: #3da9fc;
+$primary-dark: #205985;
+
+.Button {
+	transition: all 300ms;
+	display: inline-block;
+	cursor: pointer;
+	padding: 11px 16px;
+	text-transform: uppercase;
+	letter-spacing: 2.14px;
+	border: none;
+	text-decoration: none;
+	font-size: 13.3333px;
+	font-family: 'Arial';
+	color: inherit;
+	text-align: center;
+	&__primary {
+		background-color: $primary;
+		color: #252628;
+		font-weight: bold;
+	}
+	&__secondary {
+		color: $primary;
+		border: 1px solid $primary;
+		background-color: transparent;
+	}
+	&__tertiary {
+		color: $primary;
+		border: none;
+		background-color: transparent;
+	}
+	&:hover {
+		border-color: $primary-dark;
+		background-color: $primary-dark;
+		color: #fff;
+	}
+}
