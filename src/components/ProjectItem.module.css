@@ -21,8 +21,8 @@
 }
 
 .ProjectItem:hover:not(.ProjectItem__active) .ProjectItem__title {
-  -webkit-transform: scale(0.98) translateX(-7px);
-          transform: scale(0.98) translateX(-7px);
+  -webkit-transform: scale(0.98) translateX(-2px);
+          transform: scale(0.98) translateX(-2px);
 }
 
 .ProjectItem__title {
