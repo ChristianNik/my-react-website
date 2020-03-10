@@ -12,7 +12,7 @@ import Briefcase from './Briefcase';
 import Github from './Github';
 import Linkedin from './Linkedin';
 import Run from './Run';
-import Computer from './Computer';
+import Laptop from './Laptop';
 
 const Icon = props => {
 	switch (props.name) {
@@ -36,7 +36,7 @@ const Icon = props => {
 			return <Run {...props} />;
 
 		case 'computer':
-			return <Computer {...props} />;
+			return <Laptop {...props} />;
 		default:
 			return <Placeholder {...props} />;
 	}
