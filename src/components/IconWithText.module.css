@@ -1,0 +1,6 @@
+.IconWithText {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  margin-right: 15px;
+}
