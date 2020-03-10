@@ -1,0 +1,12 @@
+.Sidebar {
+	width: 64px;
+	height: 100vh;
+	background-color: #181818;
+	color: #707070;
+	display: grid;
+	grid-template-rows: 1fr 2fr 1fr;
+	&__Logo {
+		width: 32px;
+		height: 32px;
+	}
+}

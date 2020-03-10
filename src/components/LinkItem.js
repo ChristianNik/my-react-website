@@ -27,15 +27,7 @@ function LinkItem(props) {
 					className={linkItemStyle.LinkItem__link}
 					to={props.to}
 				>
-					{props.icon ? (
-						<Icon
-							src={props.icon}
-							width={props.iconWidth ? props.iconWidth : '28px'}
-							height={props.iconHeight ? props.iconHeight : '28px'}
-						/>
-					) : (
-						props.children || props.text
-					)}
+					{props.children || props.text}
 				</NavLink>
 			)}
 		</li>
