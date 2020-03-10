@@ -11,6 +11,9 @@ import Envelope from './Envelope';
 import Briefcase from './Briefcase';
 import Github from './Github';
 import Linkedin from './Linkedin';
+import Run from './Run';
+import Computer from './Computer';
+
 const Icon = props => {
 	switch (props.name) {
 		case 'home':
@@ -29,6 +32,11 @@ const Icon = props => {
 			return <Linkedin {...props} />;
 		case 'github':
 			return <Github {...props} />;
+		case 'run':
+			return <Run {...props} />;
+
+		case 'computer':
+			return <Computer {...props} />;
 		default:
 			return <Placeholder {...props} />;
 	}
