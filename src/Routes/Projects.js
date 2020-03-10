@@ -9,7 +9,6 @@ import mywebsiteV2Image from '../images/myWebsite v2.png';
 import ProjectItem from '../components/ProjectItem';
 import ProjectGroup from '../components/ProjectGroup';
 
-import Icon from '../components/icons';
 function Projects() {
 	return (
 		<div className={`${projectsStyle.Projects} page`}>

@@ -1,8 +1,6 @@
 import React from 'react';
 // Components
 import List from '../components/List';
-import { AboutIcon } from '../components/Icons';
-import IconWithText from '../components/IconWithText';
 // Styles
 import aboutSyle from './About.module.css';
 // Icons
@@ -18,10 +16,7 @@ function About() {
 			</p>
 			<div className={aboutSyle.About__Photo}></div>
 
-			<List className={aboutSyle.About__Hobbys} title='Hobbys'>
-				<IconWithText text='Joggen' />
-				<IconWithText text='Programmieren' />
-			</List>
+			<List className={aboutSyle.About__Hobbys} title='Hobbys'></List>
 		</div>
 	);
 }

@@ -1,25 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // Components
-import Iconbar from './Iconbar';
-import Logo from './Logo';
 import LinkGroup from './LinkGroup';
 import LinkItem from './LinkItem';
 // Styles
 import sidebarStyle from './Sidebar.module.css';
 // Icons
-import logoImg from '../images/Logo 1@2x.png';
 import Icon from './icons';
-import {
-	HomeIcon,
-	AboutIcon,
-	SkillsIcon,
-	ProjectsIcon,
-	ContactIcon,
-	LinkedInIcon,
-	GithubIcon,
-	LogoIcon
-} from '../components/Icons';
 
 function Sidebar() {
 	const START_ICON_SIZE = 36;

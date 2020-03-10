@@ -8,7 +8,6 @@ import linkedinIcon from '../images/icons/bxl-linkedin.svg';
 // Components
 import Button from '../components/Button';
 import Input from '../components/Input';
-import Icon from '../components/Icon';
 function Contact() {
 	return (
 		<div className={`${contactStyle.Contact} page`}>
@@ -21,12 +20,13 @@ function Contact() {
 				<Button type='primary' text='SENDEN' />
 			</form>
 			<div>
+				{/* 
 				<Icon src={kontaktIcon} />
 				<div>kontakt@chnikel.de</div>
 				<Icon src={githubIcon} />
 				<div>ChristianNik</div>
 				<Icon src={linkedinIcon} />
-				<div>christian-nikel-3537a619b</div>
+				<div>christian-nikel-3537a619b</div>*/}
 			</div>
 		</div>
 	);

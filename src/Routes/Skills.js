@@ -1,6 +1,5 @@
 import React from 'react';
 // Components
-import Icon from '../components/Icon';
 import List from '../components/List';
 import ListGroup from '../components/ListGroup';
 // Styles
