@@ -18,11 +18,14 @@ function Button(props) {
 		case 'tertiary':
 			nameOfClass = style.Button__tertiary;
 			break;
+		default:
+			break;
 	}
 	return props.href ? (
 		<a
 			target='_blank'
 			href={props.href}
+			rel='noopener noreferrer'
 			className={`${style.Button} ${nameOfClass}`}
 		>
 			{props.text}

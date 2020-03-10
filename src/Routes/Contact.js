@@ -2,9 +2,7 @@ import React from 'react';
 // Styles
 import contactStyle from './Contact.module.css';
 // Icons
-import kontaktIcon from '../images/icons/bxs-envelope.svg';
-import githubIcon from '../images/icons/bxl-github-light.svg';
-import linkedinIcon from '../images/icons/bxl-linkedin.svg';
+
 // Components
 import Button from '../components/Button';
 import Input from '../components/Input';

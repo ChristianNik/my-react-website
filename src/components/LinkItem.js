@@ -14,6 +14,7 @@ function LinkItem(props) {
 				<a
 					className={linkItemStyle.LinkItem__link}
 					target='_blank'
+					rel='noopener noreferrer'
 					href={props.href}
 				>
 					{props.children}
