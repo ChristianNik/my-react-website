@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // Components
 // Styles
-import './List.css';
+import style from './List.module.css';
 // Icons
 function List(props) {
 	return (
 		<div className={`List ${props.className || ''}`}>
-			<h3 className='List__title'>{props.title}</h3>
+			<div className={style.List__icon}>{props.icon}</div>
+			<h3 className={style.List__title}>{props.title}</h3>
 			<ul
-				className='List__list'
+				className={style.List__list}
 				style={{
 					display: 'flex',
 					flexWrap: 'wrap',
@@ -27,7 +28,7 @@ function List(props) {
 					: props.items
 					? props.items.map(item => {
 							return (
-								<li className='List__list__item' key={Math.random()}>
+								<li className={style.List__list__item} key={Math.random()}>
 									{item}
 								</li>
 							);

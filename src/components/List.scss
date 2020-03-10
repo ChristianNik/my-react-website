@@ -1,0 +1,18 @@
+.List {
+	padding: 15px 0px;
+	&__icon {
+		display: flex;
+		justify-content: center;
+	}
+	&__title {
+		margin-bottom: 7px;
+	}
+	&__list {
+		list-style: none;
+	}
+
+	&__list__item {
+		color: #717171;
+		font-family: 'Source Code Pro';
+	}
+}
