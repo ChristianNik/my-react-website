@@ -13,6 +13,8 @@ import Github from './Github';
 import Linkedin from './Linkedin';
 import Run from './Run';
 import Laptop from './Laptop';
+import Server from './Server';
+import Dots from './Dots';
 
 const Icon = props => {
 	switch (props.name) {
@@ -34,9 +36,12 @@ const Icon = props => {
 			return <Github {...props} />;
 		case 'run':
 			return <Run {...props} />;
-
-		case 'computer':
+		case 'laptop':
 			return <Laptop {...props} />;
+		case 'server':
+			return <Server {...props} />;
+		case 'dots':
+			return <Dots {...props} />;
 		default:
 			return <Placeholder {...props} />;
 	}
