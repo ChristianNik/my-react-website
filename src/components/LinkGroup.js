@@ -4,7 +4,7 @@ import style from './LinkGroup.module.css';
 function LinkGroup(props) {
 	return (
 		<ul
-			className={style.LinkGroup}
+			className={`${style.LinkGroup} ${props.className || ''}`}
 			style={{
 				justifyContent: props.position || 'flex-start'
 			}}
