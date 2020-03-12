@@ -1,18 +1,87 @@
 .Projects {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 0px 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr 2fr;
+      grid-template-columns: 1fr 4fr 2fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'description content info';
 }
-.Projects__title {
-	font-size: 3.5em;
+
+.Projects__Description {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: description;
+  background-color: #202022;
 }
-.Projects__subtitle {
-	font-size: 1.2em;
-	color: #717171;
-	letter-spacing: 0.4px;
-	font-family: 'Source Code Pro';
-	margin-top: 10px;
-	margin-bottom: 40px;
+
+.Projects__Description .Description__title {
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 150px;
+  letter-spacing: 0.27px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.Projects__Content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  row-gap: 50px;
+  padding-top: 200px;
+}
+
+.Projects__Content .Projects__Group {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.Projects__Info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: info;
+  background-color: #111112;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 4fr 1fr;
+}
+
+.Projects__Info .Info__Description {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  padding-top: 200px;
+}
+
+.Projects__Info .Info__Description .Description__title {
+  text-align: center;
+  letter-spacing: 1.03px;
+  margin-bottom: 22px;
+}
+
+.Projects__Info .Info__Description .Description__description {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  font-size: 1.2em;
+  color: #717171;
+  letter-spacing: 0.4px;
+  font-family: 'Source Code Pro';
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.Projects__Info .Info__Description .Description__controls {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }

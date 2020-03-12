@@ -2,9 +2,9 @@
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr;
 	grid-template-rows: 1fr;
-	grid-template-areas: 'description foto info';
+	grid-template-areas: 'content foto info';
 	&__Content {
-		grid-area: description;
+		grid-area: content;
 		display: grid;
 		grid-template-columns: 1fr 10fr 1fr;
 		grid-template-rows: auto 1fr;

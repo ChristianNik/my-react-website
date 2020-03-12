@@ -8,7 +8,7 @@ function ProjectGroup(props) {
 				gridAutoFlow: 'column',
 				gridGap: '15px'
 			}}
-			className='ProjectGroup'
+			className={props.className}
 		>
 			{props.children}
 		</div>
