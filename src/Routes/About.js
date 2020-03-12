@@ -3,22 +3,33 @@ import React from 'react';
 import List from '../components/List';
 import IconWithText from '../components/IconWithText';
 // Styles
-import aboutSyle from './About.module.css';
+import style from './About.module.css';
 
 function About() {
 	return (
-		<div className={`${aboutSyle.About} page`}>
-			<h1 className={aboutSyle.About__title}>Über mich</h1>
-			<p className={aboutSyle.About__subtitle}>
-				Ich bin Christian. In meiner Freizeit programmiere und designe ich
-				Webseiten. Ich wohne in der Nähe von Köln und bin gerne Unterwegs.
-			</p>
-			<div className={aboutSyle.About__Photo}></div>
-
-			<List className={aboutSyle.About__Hobbys} title='Hobbys'>
-				<IconWithText name='run' text='Joggen' />
-				<IconWithText name='laptop' text='Programmieren' />
-			</List>
+		<div className={`${style.About} page`}>
+			<div className={style.About__Content}>
+				<h1 className={style.Content__title}>Über mich</h1>
+				<p className={style.Content__description}>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+					delectus, eius incidunt recusandae eligendi sint odit natus maiores
+					consequatur reprehenderit asperiores voluptatum iste nulla aperiam
+					quia necessitatibus nihil iusto cum obcaecati repellendus corporis
+					similique et. Cum saepe accusamus illo dolorum ad autem quisquam sed
+					magnam error eveniet? Aperiam, impedit culpa.
+				</p>
+			</div>
+			<div className={style.About__photo}></div>
+			<div className={style.About__Info}>
+				<List className={style.Info__Hobbys} title='HOBBYS'>
+					<IconWithText name='run' text='Joggen' fill='#fff' />
+					<IconWithText name='laptop' text='Programmieren' fill='#fff' />
+				</List>
+				<List className={style.Info__Hobbys} title='ANDERES'>
+					<IconWithText name='' text='Führerschein' fill='#fff' />
+					<IconWithText name='' text='Auto' fill='#fff' />
+				</List>
+			</div>
 		</div>
 	);
 }

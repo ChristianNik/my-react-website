@@ -14,6 +14,7 @@ function List(props) {
 				style={{
 					display: 'flex',
 					flexWrap: 'wrap',
+					justifyContent: 'center',
 					flexDirection: props.items ? 'column' : 'row'
 				}}
 			>
