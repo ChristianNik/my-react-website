@@ -17,7 +17,7 @@ function About() {
 
 			<List className={aboutSyle.About__Hobbys} title='Hobbys'>
 				<IconWithText name='run' text='Joggen' />
-				<IconWithText name='laptop' text='Programieren' />
+				<IconWithText name='laptop' text='Programmieren' />
 			</List>
 		</div>
 	);
