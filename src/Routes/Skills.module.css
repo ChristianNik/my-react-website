@@ -1,20 +1,48 @@
 .Skills {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 0px 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45px 1fr 1fr 45px;
+      grid-template-columns: 45px 1fr 1fr 45px;
+  -ms-grid-rows: 45px 1fr 1fr 45px;
+      grid-template-rows: 45px 1fr 1fr 45px;
+  text-align: center;
 }
 
-.Skills__title {
-	font-size: 3.5em;
+.Skills__Content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr;
+  row-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3a3b3d;
+  padding-top: 130px;
 }
 
-.Skills__subtitle {
-	font-size: 1.2em;
-	color: #717171;
-	letter-spacing: 0.4px;
-	font-family: 'Source Code Pro';
-	margin-top: 10px;
-	margin-bottom: 40px;
+.Skills__Content .Content__title {
+  text-transform: uppercase;
+  font-size: 137px;
+  line-height: 150px;
+  letter-spacing: 0.27px;
+  font-weight: 400;
+}
+
+.Skills .bg__black {
+  grid-column: span 2;
+}
+
+.Skills .bg__blue {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / span 2;
+  grid-row: 1 / -1;
+  background-color: #4b7bec;
 }
