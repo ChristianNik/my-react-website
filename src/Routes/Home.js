@@ -2,18 +2,18 @@ import React from 'react';
 // Components
 import Button from '../components/Button';
 // Styles
-import homeStyle from './Home.module.css';
+import style from './Home.module.css';
 // Icons
 function Home() {
 	return (
-		<div className={`${homeStyle.Home} page`}>
-			<h1 className={homeStyle.Home__title}>
-				Hey, 👋
+		<div className={`${style.Home} page`}>
+			<h1 className={style.Home__title}>
+				Hey, <span className={style.wave}>👋</span>
 				<br />
 				ich bin <br />
 				Christian.
 			</h1>
-			<p className={homeStyle.Home__subtitle}>
+			<p className={style.Home__subtitle}>
 				Informationstechnischer Assistent <br /> Junior Frontend Entwickler
 			</p>
 			<Button type='secondary' text='Meine Projekte' to='/projects' />
