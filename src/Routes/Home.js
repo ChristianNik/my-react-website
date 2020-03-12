@@ -8,12 +8,13 @@ function Home() {
 	return (
 		<div className={`${homeStyle.Home} page`}>
 			<h1 className={homeStyle.Home__title}>
-				Hey, <br />
+				Hey, 👋
+				<br />
 				ich bin <br />
 				Christian.
 			</h1>
 			<p className={homeStyle.Home__subtitle}>
-				Informationstechnischer Assistent / Junior Frontend Entwickler
+				Informationstechnischer Assistent <br /> Junior Frontend Entwickler
 			</p>
 			<Button type='secondary' text='Meine Projekte' to='/projects' />
 		</div>
