@@ -61,23 +61,7 @@ function Skills() {
 								height: '48px',
 								width: '48px',
 								backgroundColor: '#343537',
-								marginRight: '30px'
-							}}
-						></div>
-						<div
-							style={{
-								height: '48px',
-								width: '48px',
-								backgroundColor: '#343537',
-								marginRight: '30px'
-							}}
-						></div>
-						<div
-							style={{
-								height: '48px',
-								width: '48px',
-								backgroundColor: '#343537',
-								marginRight: '30px'
+								marginRight: '0px'
 							}}
 						></div>
 					</div>

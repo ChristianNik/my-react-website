@@ -30,8 +30,8 @@
   grid-area: content;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-columns: 5rem 1fr 5rem;
+      grid-template-columns: 5rem 1fr 5rem;
   row-gap: 50px;
   padding-top: 200px;
 }
@@ -84,4 +84,15 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+
+.Item {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 500px;
+}
+
+.Image {
+  height: 100%;
 }

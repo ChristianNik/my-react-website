@@ -19,7 +19,7 @@
 	&__Content {
 		grid-area: content;
 		display: grid;
-		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-columns: 5rem 1fr 5rem;
 		row-gap: 50px;
 		padding-top: 200px;
 		.Projects__Group {
@@ -55,4 +55,13 @@
 			}
 		}
 	}
+}
+
+.Item {
+	grid-column: 2 / 3;
+	height: 500px;
+}
+
+.Image {
+	height: 100%;
 }
