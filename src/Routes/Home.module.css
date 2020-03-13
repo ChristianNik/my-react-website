@@ -43,6 +43,7 @@
   -webkit-transform-origin: 70% 70%;
           transform-origin: 70% 70%;
   display: inline-block;
+  cursor: default;
 }
 
 @-webkit-keyframes wave-animation {
