@@ -15,6 +15,8 @@ import Run from './Run';
 import Laptop from './Laptop';
 import Server from './Server';
 import Dots from './Dots';
+import VsCode from './VsCode';
+import AdobeXd from './AdobeXd';
 
 const Icon = props => {
 	switch (props.name) {
@@ -42,6 +44,10 @@ const Icon = props => {
 			return <Server {...props} />;
 		case 'dots':
 			return <Dots {...props} />;
+		case 'vscode':
+			return <VsCode {...props} />;
+		case 'adobexd':
+			return <AdobeXd {...props} />;
 		default:
 			return <Placeholder {...props} />;
 	}
