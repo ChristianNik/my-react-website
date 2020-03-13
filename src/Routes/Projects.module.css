@@ -1,8 +1,8 @@
 .Projects {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4fr 2fr;
-      grid-template-columns: 1fr 4fr 2fr;
+  -ms-grid-columns: 14vw 4fr 28vw;
+      grid-template-columns: 14vw 4fr 28vw;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: 'description content info';
@@ -11,9 +11,9 @@
 }
 
 .Projects__Description {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: description;
+  position: fixed;
+  width: 14vw;
+  height: 100vh;
   background-color: #202022;
 }
 
@@ -45,9 +45,10 @@
 }
 
 .Projects__Info {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: info;
+  position: fixed;
+  width: 24vw;
+  height: 100vh;
+  right: 0;
   background-color: #111112;
   display: -ms-grid;
   display: grid;

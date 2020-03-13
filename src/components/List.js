@@ -11,7 +11,6 @@ function List(props) {
 			: style.List__list__column
 		: '';
 
-	console.log(flowDirection);
 	return (
 		<div className={`List ${props.className || ''}`}>
 			<div className={style.List__icon}>{props.icon}</div>
