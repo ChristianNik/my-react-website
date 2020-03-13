@@ -16,7 +16,10 @@ function List(props) {
 		<div className={`List ${props.className || ''}`}>
 			<div className={style.List__icon}>{props.icon}</div>
 			<h3 className={style.List__title}>{props.title}</h3>
-			<ul className={`${style.List__list} ${flowDirection} `}>
+			<ul
+				className={`${style.List__list} ${flowDirection} `}
+				style={{ gap: props.gap || '' }}
+			>
 				{props.children
 					? props.children.length > 1
 						? props.children
