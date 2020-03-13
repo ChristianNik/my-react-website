@@ -5,19 +5,18 @@ import PropTypes from 'prop-types';
 import style from './List.module.css';
 // Icons
 function List(props) {
+	const flowDirection = props.flow
+		? props.flow === 'row'
+			? style.List__list__row
+			: style.List__list__column
+		: '';
+
+	console.log(flowDirection);
 	return (
 		<div className={`List ${props.className || ''}`}>
 			<div className={style.List__icon}>{props.icon}</div>
 			<h3 className={style.List__title}>{props.title}</h3>
-			<ul
-				className={style.List__list}
-				style={{
-					display: 'flex',
-					flexWrap: 'wrap',
-					justifyContent: 'center',
-					flexDirection: props.items ? 'column' : 'row'
-				}}
-			>
+			<ul className={`${style.List__list} ${flowDirection} `}>
 				{props.children
 					? props.children.length > 1
 						? props.children

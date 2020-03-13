@@ -75,7 +75,8 @@ function Skills() {
 							style={{
 								height: '48px',
 								width: '48px',
-								backgroundColor: '#343537'
+								backgroundColor: '#343537',
+								marginRight: '30px'
 							}}
 						></div>
 						<div

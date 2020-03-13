@@ -15,4 +15,15 @@
 		color: #717171;
 		font-family: 'Source Code Pro';
 	}
+	&__list {
+		display: grid;
+		gap: 10px;
+		justify-content: center;
+		&__row {
+			grid-auto-flow: column;
+		}
+		&__column {
+			grid-auto-flow: row;
+		}
+	}
 }

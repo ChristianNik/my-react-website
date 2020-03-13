@@ -21,13 +21,13 @@ function About() {
 			</div>
 			<div className={style.About__photo}></div>
 			<div className={style.About__Info}>
-				<List className={style.Info__Hobbys} title='HOBBYS'>
+				<List className={style.Info__Hobbys} flow='row' title='HOBBYS'>
 					<IconWithText name='run' text='Joggen' fill='#fff' />
 					<IconWithText name='laptop' text='Programmieren' fill='#fff' />
 				</List>
-				<List className={style.Info__Hobbys} title='ANDERES'>
-					<IconWithText name='' text='Führerschein' fill='#fff' />
-					<IconWithText name='' text='Auto' fill='#fff' />
+				<List className={style.Info__Hobbys} flow='column' title='ANDERES'>
+					<IconWithText name='' flow='row' text='Führerschein' fill='#fff' />
+					<IconWithText name='' flow='row' text='Auto' fill='#fff' />
 				</List>
 			</div>
 		</div>

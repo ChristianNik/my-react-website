@@ -1,6 +1,20 @@
 .IconWithText {
   display: -ms-grid;
   display: grid;
+  gap: 7px;
   justify-items: center;
-  margin-right: 15px;
+}
+
+.IconWithText__row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
+  justify-items: left;
+}
+
+.IconWithText__text {
+  text-align: left;
 }
