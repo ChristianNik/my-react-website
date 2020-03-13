@@ -1,8 +1,8 @@
 .Projects {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4fr 2fr;
-      grid-template-columns: 1fr 4fr 2fr;
+  -ms-grid-columns: 14vw 4fr 28vw;
+      grid-template-columns: 14vw 4fr 28vw;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: 'description content info';
@@ -11,16 +11,16 @@
 }
 
 .Projects__Description {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: description;
+  position: fixed;
+  width: 14vw;
+  height: 100vh;
   background-color: #202022;
 }
 
 .Projects__Description .Description__title {
   margin-top: 40px;
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 2.8125rem;
   letter-spacing: 0.27px;
   font-weight: 400;
   text-align: center;
@@ -34,7 +34,9 @@
   display: grid;
   -ms-grid-columns: 5rem 1fr 5rem;
       grid-template-columns: 5rem 1fr 5rem;
-  row-gap: 50px;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  row-gap: 0;
   padding-top: 100px;
 }
 
@@ -45,9 +47,10 @@
 }
 
 .Projects__Info {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: info;
+  position: fixed;
+  width: 24vw;
+  height: 100vh;
+  right: 0;
   background-color: #111112;
   display: -ms-grid;
   display: grid;
@@ -98,11 +101,12 @@
 .Image {
   -webkit-transition: all 300ms;
   transition: all 300ms;
-  width: 600px;
+  width: 33vw;
   cursor: pointer;
 }
 
 .Image:hover {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  outline: 1px solid #fed330;
 }
