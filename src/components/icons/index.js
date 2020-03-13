@@ -17,6 +17,8 @@ import Server from './Server';
 import Dots from './Dots';
 import VsCode from './VsCode';
 import AdobeXd from './AdobeXd';
+import Car from './Car';
+import Card from './Card';
 
 const Icon = props => {
 	switch (props.name) {
@@ -48,6 +50,10 @@ const Icon = props => {
 			return <VsCode {...props} />;
 		case 'adobexd':
 			return <AdobeXd {...props} />;
+		case 'car':
+			return <Car {...props} />;
+		case 'card':
+			return <Card {...props} />;
 		default:
 			return <Placeholder {...props} />;
 	}
