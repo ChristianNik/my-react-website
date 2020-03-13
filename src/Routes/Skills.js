@@ -2,7 +2,7 @@ import React from 'react';
 // Components
 import List from '../components/List';
 import ListGroup from '../components/ListGroup';
-// Styles
+// Styles!
 import style from './Skills.module.css';
 // Icons
 import Icon from '../components/icons';
@@ -19,16 +19,19 @@ function Skills() {
 						icon={<Icon name='server' fill='#4B7BEC' width={28} />}
 						title='Backend'
 						items={['PHP', 'MYSQL', 'NODEJS']}
+						className={style.Skills__List}
 					/>
 					<List
 						icon={<Icon name='laptop' fill='#4B7BEC' width={28} />}
 						title='Frontend'
 						items={['HTML & CSS', 'JAVASCRIPT', 'REACTJS']}
+						className={style.Skills__List}
 					/>
 					<List
 						icon={<Icon name='dots' fill='#4B7BEC' width={28} />}
 						title='Anderes'
-						items={['C#']}
+						items={['C#', 'ADOBE XD']}
+						className={style.Skills__List}
 					/>
 				</ListGroup>
 				<div>
@@ -39,6 +42,20 @@ function Skills() {
 							justifyContent: 'center'
 						}}
 					>
+						<Icon
+							style={{
+								marginRight: '30px'
+							}}
+							name='vscode'
+							width={48}
+						/>
+						<Icon
+							style={{
+								marginRight: '30px'
+							}}
+							name='adobexd'
+							width={48}
+						/>
 						<div
 							style={{
 								height: '48px',
@@ -61,29 +78,6 @@ function Skills() {
 								width: '48px',
 								backgroundColor: '#343537',
 								marginRight: '30px'
-							}}
-						></div>
-						<div
-							style={{
-								height: '48px',
-								width: '48px',
-								backgroundColor: '#343537',
-								marginRight: '30px'
-							}}
-						></div>
-						<div
-							style={{
-								height: '48px',
-								width: '48px',
-								backgroundColor: '#343537',
-								marginRight: '30px'
-							}}
-						></div>
-						<div
-							style={{
-								height: '48px',
-								width: '48px',
-								backgroundColor: '#343537'
 							}}
 						></div>
 					</div>

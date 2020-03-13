@@ -27,7 +27,6 @@
 .List__list {
   display: -ms-grid;
   display: grid;
-  gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
