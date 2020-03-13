@@ -78,6 +78,13 @@ function Skills() {
 								backgroundColor: '#343537'
 							}}
 						></div>
+						<div
+							style={{
+								height: '48px',
+								width: '48px',
+								backgroundColor: '#343537'
+							}}
+						></div>
 					</div>
 				</div>
 			</div>
