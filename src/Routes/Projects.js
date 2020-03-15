@@ -51,7 +51,7 @@ function Projects(props) {
 							setDescription(
 								'Meine erste private Website. Erstellt mit Standard HTML, CSS & JavaScript.'
 							);
-							setHrefDemo('http://projects.chnikel.de/oo622cy9ukqyu9kmzygtm');
+							setHrefDemo('http://projects.chnikel.de/my-private-website-v1');
 							setHrefCode(
 								'https://github.com/ChristianNik/personal-website-v1'
 							);

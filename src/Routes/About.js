@@ -9,8 +9,8 @@ function About() {
 	return (
 		<div className={`${style.About} page`}>
 			<div className={style.About__Content}>
-				<h1 className={style.Content__title}>Über mich</h1>
-				<p className={style.Content__description}>
+				<h1 className={style.About__title}>Über mich</h1>
+				<p className={style.About__description}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
 					delectus, eius incidunt recusandae eligendi sint odit natus maiores
 					consequatur reprehenderit asperiores voluptatum iste nulla aperiam
