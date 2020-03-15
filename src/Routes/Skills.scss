@@ -9,21 +9,22 @@ $padding: 45px;
 	&__Content {
 		grid-column: 2 / 4;
 		grid-row: 2 / 4;
-		display: grid;
-		grid-template-rows: auto 1fr 1fr;
-		row-gap: 50px;
-		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		background-color: #3a3b3d;
 		padding-top: 130px;
-		.Content__title {
-			text-transform: uppercase;
-			font-size: 137px;
-			line-height: 150px;
-			letter-spacing: 0.27px;
-			font-weight: 400;
-		}
+	}
+	&__title {
+		text-transform: uppercase;
+		font-size: 137px;
+		line-height: 150px;
+		letter-spacing: 0.27px;
+		font-weight: 400;
+		margin-bottom: 60px;
 	}
 	&__List {
+		margin-bottom: 70px;
 		h3 {
 			color: #717171;
 			font-weight: 200;

@@ -15,24 +15,31 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2 / 4;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto 1fr 1fr;
-      grid-template-rows: auto 1fr 1fr;
-  row-gap: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #3a3b3d;
   padding-top: 130px;
 }
 
-.Skills__Content .Content__title {
+.Skills__title {
   text-transform: uppercase;
   font-size: 137px;
   line-height: 150px;
   letter-spacing: 0.27px;
   font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.Skills__List {
+  margin-bottom: 70px;
 }
 
 .Skills__List h3 {

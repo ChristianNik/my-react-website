@@ -13,7 +13,7 @@ function Skills() {
 			<div className={style.bg__black}></div>
 			<div className={style.bg__blue}></div>
 			<div className={style.Skills__Content}>
-				<h1 className={style.Content__title}>Skills</h1>
+				<h1 className={style.Skills__title}>Skills</h1>
 				<ListGroup width='500px'>
 					<List
 						icon={<Icon name='server' fill='#4B7BEC' width={28} />}
