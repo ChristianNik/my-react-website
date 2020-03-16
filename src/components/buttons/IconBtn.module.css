@@ -1,0 +1,18 @@
+.IconBtn {
+  margin-left: 9px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #252628;
+  border-radius: 57px;
+  padding: 9px;
+}
+
+.IconBtn__text {
+  font-weight: 100;
+}
+
+.IconBtn:hover {
+  background-color: #36373a;
+}

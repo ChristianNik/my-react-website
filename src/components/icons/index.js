@@ -19,6 +19,7 @@ import VsCode from './VsCode';
 import AdobeXd from './AdobeXd';
 import Car from './Car';
 import Card from './Card';
+import Globe from './Globe';
 
 const Icon = props => {
 	switch (props.name) {
@@ -54,6 +55,8 @@ const Icon = props => {
 			return <Car {...props} />;
 		case 'card':
 			return <Card {...props} />;
+		case 'globe':
+			return <Globe {...props} />;
 		default:
 			return <Placeholder {...props} />;
 	}

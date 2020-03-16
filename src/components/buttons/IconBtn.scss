@@ -1,0 +1,14 @@
+.IconBtn {
+	margin-left: 9px;
+	cursor: pointer;
+	display: flex;
+	background-color: #252628;
+	border-radius: 57px;
+	padding: 9px;
+	&__text {
+		font-weight: 100;
+	}
+	&:hover {
+		background-color: #36373a;
+	}
+}
