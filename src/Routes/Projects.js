@@ -9,6 +9,7 @@ import mywebsiteV2Image from '../images/myWebsite v2.png';
 import ProjectItem from '../components/ProjectItem';
 import IconBtn from '../components/buttons/IconBtn';
 import Button from '../components/Button';
+import InfoBar from '../components/InfoBar';
 
 function Projects(props) {
 	const [title, setTitle] = useState('');
@@ -101,59 +102,7 @@ function Projects(props) {
 					}
 				)}
 			</div>
-			<div className={style.Projects__Info}>
-				<div className={style.Projects__Info__Content}>
-					<img className={style.Projects__image} src={image} alt='' />
-					<h2 className={style.Projects__title}>{title}</h2>
-					<p className={style.Projects__description}>{description}</p>
-					<hr className={style.Projects__line} />
-					<div style={{ display: 'flex' }}>
-						{hrefDemo ? (
-							<Button href={hrefDemo} type='primary' text='DEMO' />
-						) : (
-							''
-						)}
-
-						<div
-							style={{
-								display: 'flex',
-								justifyContent: 'flex-end',
-								width: '100%'
-							}}
-						>
-							<a target='_blank' href={hrefCode}>
-								<IconBtn name='github' />
-							</a>
-							<IconBtn name='dots' />
-						</div>
-					</div>
-					<div className={style.Projects__CreatedBy}>
-						<h2>Erstellt mit</h2>
-						<div
-							style={{
-								display: 'flex',
-								width: '100%'
-							}}
-						>
-							<div
-								style={{
-									width: '48px',
-									height: '48px',
-									background: '#A55EEA',
-									marginRight: '20px'
-								}}
-							></div>
-							<div
-								style={{
-									width: '48px',
-									height: '48px',
-									background: '#fff'
-								}}
-							></div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<InfoBar {...{ title, description, hrefCode, hrefDemo, image }} />
 		</div>
 	);
 }
