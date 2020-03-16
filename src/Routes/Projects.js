@@ -7,7 +7,6 @@ import mywebsiteImage from '../images/my Website.png';
 import mywebsiteV2Image from '../images/myWebsite v2.png';
 // Components
 import ProjectItem from '../components/ProjectItem';
-import ProjectGroup from '../components/ProjectGroup';
 import IconBtn from '../components/buttons/IconBtn';
 import Button from '../components/Button';
 
@@ -122,7 +121,9 @@ function Projects(props) {
 								width: '100%'
 							}}
 						>
-							<IconBtn name='github' />
+							<a target='_blank' href={hrefCode}>
+								<IconBtn name='github' />
+							</a>
 							<IconBtn name='dots' />
 						</div>
 					</div>
