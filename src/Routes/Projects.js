@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // Styles
 import style from './Projects.module.css';
 // Icons / Images
@@ -12,22 +12,69 @@ import IconBtn from '../components/buttons/IconBtn';
 import Button from '../components/Button';
 
 function Projects(props) {
-	const [title, setTitle] = useState('Reisebus Verwaltungs Client');
-	const [description, setDescription] = useState(
-		`Innerhalb von 3 Monaten sollten eine Reisebusverwaltungssoftware und eine dazugehörige Website programmiert werden. 
-		Mithilfe der Software können Administratoren Buchungen, Buslinien, Busflotten und Fahrpläne ändern und anlegen.`
-	);
+	const [title, setTitle] = useState('');
+	const [description, setDescription] = useState('');
 	const [hrefDemo, setHrefDemo] = useState('');
-	const [hrefCode, setHrefCode] = useState(
-		'https://github.com/ChristianNik/personal-website-v1'
-	);
+	const [hrefCode, setHrefCode] = useState('');
+	const [image, setImage] = useState('');
 
-	const changeState = (title, description, hrefCode, hrefDemo) => {
+	const initialState = () => {
+		changeState({
+			title: 'Reisebus Verwaltungs Client',
+			description: `Innerhalb von 3 Monaten sollten eine Reisebusverwaltungssoftware und eine dazugehörige Website programmiert werden. Mithilfe der Software können Administratoren Buchungen, Buslinien, Busflotten und Fahrpläne ändern und anlegen.`,
+			hrefCode:
+				'https://github.com/ChristianNik/Reisebus-Verwaltungs-Clitent-v3',
+			hrefDemo: '',
+			image: busSystemImage
+		});
+	};
+
+	const changeState = ({
+		title,
+		description,
+		hrefCode,
+		hrefDemo,
+		image = ''
+	}) => {
 		setTitle(title);
 		setDescription(description);
 		setHrefCode(hrefCode);
 		setHrefDemo(hrefDemo);
+		setImage(image);
 	};
+
+	const fakeAPIData = [
+		{
+			title: 'Reisebus Verwaltungs Client',
+			description: `Innerhalb von 3 Monaten sollten eine Reisebusverwaltungssoftware und eine dazugehörige Website programmiert werden. Mithilfe der Software können Administratoren Buchungen, Buslinien, Busflotten und Fahrpläne ändern und anlegen.`,
+			hrefCode:
+				'https://github.com/ChristianNik/Reisebus-Verwaltungs-Clitent-v3',
+			hrefDemo: '',
+			image: busSystemImage
+		},
+		{
+			title: 'Private Website v1',
+			description:
+				'Meine erste private Website. Erstellt mit Standard HTML, CSS & JavaScript.',
+			hrefCode: 'https://github.com/ChristianNik/personal-website-v1',
+			hrefDemo: 'http://projects.chnikel.de/my-private-website-v1',
+			image: mywebsiteImage
+		},
+		{
+			title: 'Private Website v2',
+			description: 'Meine neue private Website. Erstellt mit ReactJS.',
+			hrefCode: 'https://github.com/ChristianNik/my-react-website',
+			hrefDemo: 'http://dev.chnikel.de/',
+			image: mywebsiteV2Image
+		}
+	];
+
+	//
+	//
+	//
+	useEffect(() => {
+		initialState();
+	}, []);
 
 	return (
 		<div className={`${style.Projects} page`}>
@@ -35,47 +82,39 @@ function Projects(props) {
 				<h1>Projekte</h1>
 			</div>
 			<div className={style.Projects__Content}>
-				<ProjectItem
-					func={() =>
-						changeState(
-							'Reisebus Verwaltungs Client',
-							`Innerhalb von 3 Monaten sollten eine Reisebusverwaltungssoftware und eine dazugehörige
-								Website programmiert werden. Mithilfe der Software können Administratoren Buchungen, Buslinien, Busflotten und Fahrpläne ändern und anlegen.`,
-							'https://github.com/ChristianNik/Reisebus-Verwaltungs-Clitent-v3'
-						)
+				{fakeAPIData.map(
+					({ title, description, hrefCode, hrefDemo, image }) => {
+						return (
+							<ProjectItem
+								key={Math.random()}
+								func={() =>
+									changeState({
+										title,
+										description,
+										hrefCode,
+										hrefDemo,
+										image
+									})
+								}
+								src={image}
+							/>
+						);
 					}
-					src={busSystemImage}
-				/>
-				<ProjectItem
-					func={() =>
-						changeState(
-							'Private Website v1',
-							'Meine erste private Website. Erstellt mit Standard HTML, CSS & JavaScript.',
-							'https://github.com/ChristianNik/personal-website-v1',
-							'http://projects.chnikel.de/my-private-website-v1'
-						)
-					}
-					src={mywebsiteImage}
-				/>
-				<ProjectItem
-					func={() =>
-						changeState(
-							'Private Website v2',
-							'Meine neue private Website. Erstellt mit ReactJS.',
-							'https://github.com/ChristianNik/personal-website-v1',
-							'https://github.com/ChristianNik/my-react-website'
-						)
-					}
-					src={mywebsiteV2Image}
-				/>
+				)}
 			</div>
 			<div className={style.Projects__Info}>
 				<div className={style.Projects__Info__Content}>
+					<img className={style.Projects__image} src={image} alt='' />
 					<h2 className={style.Projects__title}>{title}</h2>
 					<p className={style.Projects__description}>{description}</p>
 					<hr className={style.Projects__line} />
 					<div style={{ display: 'flex' }}>
-						<Button type='primary' text='CODE' />
+						{hrefDemo ? (
+							<Button href={hrefDemo} type='primary' text='DEMO' />
+						) : (
+							''
+						)}
+
 						<div
 							style={{
 								display: 'flex',

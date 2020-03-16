@@ -57,6 +57,10 @@
   width: 30vw;
 }
 
+.Projects__image {
+  width: 100%;
+}
+
 .Projects__title {
   margin-bottom: 15px;
 }
