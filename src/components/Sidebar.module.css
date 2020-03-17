@@ -8,28 +8,9 @@
   display: grid;
   -ms-grid-rows: 1fr 2fr 1fr;
       grid-template-rows: 1fr 2fr 1fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
 }
 
-@media (max-width: 1000px) {
-  .Sidebar {
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr 2fr 1fr;
-        grid-template-columns: 1fr 2fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .Sidebar {
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .Sidebar ul:first-child,
-  .Sidebar ul:last-child {
-    display: none;
-  }
+.Sidebar__Logo {
+  width: 32px;
+  height: 32px;
 }

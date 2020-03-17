@@ -1,31 +1,20 @@
 .App {
 	height: 100vh;
 	background-color: #252628;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #fffffe;
 	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 64px 1fr;
-	grid-template-areas: 'sidebar content';
+	grid-template-columns: auto 1fr;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .page {
-	overflow: hidden;
-	grid-area: content;
+	color: #fffffe;
+	position: absolute;
+	top: 0;
+	left: 64px;
+	right: 0;
+	bottom: 0;
 }
 
-@media (max-width: 1000px) {
-	.App {
-		grid-template-rows: 1fr 64px;
-		grid-template-columns: 1fr;
-		grid-template-areas: 'content' 'sidebar';
-	}
-	.page {
-		padding: 25px;
-	}
-}
-
-/*
 .fade-appear,
 .fade-enter {
 	opacity: 0;
@@ -43,4 +32,3 @@
 	opacity: 0;
 	transition: opacity 150ms linear;
 }
-*/
