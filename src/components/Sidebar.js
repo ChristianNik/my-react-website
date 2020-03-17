@@ -38,7 +38,7 @@ function Sidebar() {
 				</LinkItem>
 			*/}
 			</LinkGroup>
-			<LinkGroup position='end'>
+			<LinkGroup position='flex-end'>
 				<LinkItem
 					href='https://www.linkedin.com/in/christian-nikel-3537a619b'
 					text='linkedin'
