@@ -10,14 +10,10 @@
       grid-template-rows: 1fr 2fr 1fr;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  z-index: 1000;
 }
 
 @media (max-width: 1000px) {
   .Sidebar {
-    height: 64px;
-    width: 100vw;
-    bottom: 0;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -ms-grid-columns: 1fr 2fr 1fr;
