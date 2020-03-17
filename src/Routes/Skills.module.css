@@ -30,11 +30,13 @@
 }
 
 .Skills__title {
+  text-align: center;
   text-transform: uppercase;
   font-size: 137px;
   line-height: 150px;
   letter-spacing: 0.27px;
   font-weight: 400;
+  color: #fff;
   margin-bottom: 60px;
 }
 

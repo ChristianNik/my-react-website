@@ -1,8 +1,11 @@
+@import '../scss/variables';
+@import '../scss/typography';
+
 .Sidebar {
 	position: fixed;
 	width: 64px;
 	height: 100vh;
-	background-color: #181818;
+	background-color: map-get($mono, f);
 	color: #707070;
 	display: grid;
 	grid-template-rows: 1fr 2fr 1fr;

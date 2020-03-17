@@ -1,12 +1,41 @@
-$prime: #4b7bec;
-$accent-color: #ff652f;
-$text-color: #fff;
-
 // Colors
-$blue-light: #356282;
-$blue-dark: #072f4b;
-$blue-darker: #051e2f;
 
-$gray: #707070;
+$prim: (
+	prim: #4b7bec,
+	light: #a7bff6,
+	darken: #1446bd,
+	saturate: #3873ff,
+	desaturate: #5f83d8,
+	grayscale: #9b9b9b,
+	bright: #7eaeff,
+	readable: #000000
+);
 
-$background-color: #252628;
+// triadic
+$triad: (
+	blue: #4b7bec,
+	red: #ec4b7b,
+	green: #7bec4b
+);
+
+// monochromatic
+$mono: (
+	a: #4b7bec,
+	b: #3d65c1,
+	c: #304f97,
+	d: #22396c,
+	e: #152242,
+	f: #070c17
+);
+
+$prime: map-get($mono, a);
+$primary-dark: map-get($mono, c);
+$light: #fff;
+$dark: map-get($mono, f);
+$gray: map-get($prim, grayscale);
+
+$h1: $light;
+$text: $gray;
+$text2: map-get($mono, d);
+
+$background: map-get($mono, f);

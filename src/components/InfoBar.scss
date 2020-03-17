@@ -3,7 +3,7 @@
 
 .InfoBar {
 	position: absolute;
-	background-color: #0e0e0f;
+	background-color: map-get($mono, f);
 	top: 0;
 	bottom: 0;
 	right: 0;

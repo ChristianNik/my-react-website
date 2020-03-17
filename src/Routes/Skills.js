@@ -16,19 +16,19 @@ function Skills() {
 				<h1 className={style.Skills__title}>Skills</h1>
 				<ListGroup width='500px'>
 					<List
-						icon={<Icon name='server' fill='#4B7BEC' width={28} />}
+						icon={<Icon name='server' fill='#4b7bec' width={28} />}
 						title='Backend'
 						items={['PHP', 'MYSQL', 'NODEJS']}
 						className={style.Skills__List}
 					/>
 					<List
-						icon={<Icon name='laptop' fill='#4B7BEC' width={28} />}
+						icon={<Icon name='laptop' fill='#4b7bec' width={28} />}
 						title='Frontend'
 						items={['HTML & CSS', 'JAVASCRIPT', 'REACTJS']}
 						className={style.Skills__List}
 					/>
 					<List
-						icon={<Icon name='dots' fill='#4B7BEC' width={28} />}
+						icon={<Icon name='dots' fill='#4b7bec' width={28} />}
 						title='Anderes'
 						items={['C#', 'ADOBE XD']}
 						className={style.Skills__List}

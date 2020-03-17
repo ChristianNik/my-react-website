@@ -16,17 +16,24 @@
 }
 
 .Home__title {
+  text-align: left;
   text-transform: uppercase;
   font-size: 137px;
   line-height: 150px;
   letter-spacing: 0.27px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .Home__subtitle {
-  font-size: 31px;
-  color: #717171;
-  letter-spacing: 0.78px;
   font-family: 'Source Code Pro';
+  font-size: 1em;
+  text-align: left;
+  letter-spacing: 0.4px;
+  color: #9b9b9b;
+  font-size: 31px;
   margin-top: 10px;
   margin-bottom: 40px;
 }

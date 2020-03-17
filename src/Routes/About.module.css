@@ -27,21 +27,24 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
+  text-align: center;
   text-transform: uppercase;
   font-size: 137px;
   line-height: 150px;
   letter-spacing: 0.27px;
   font-weight: 400;
+  color: #fff;
 }
 
 .About__description {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  font-size: 1.2em;
-  color: #717171;
-  letter-spacing: 0.4px;
   font-family: 'Source Code Pro';
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #9b9b9b;
 }
 
 .About__photo {

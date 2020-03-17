@@ -8,12 +8,13 @@
 	line-height: 150px;
 	letter-spacing: 0.27px;
 	font-weight: 400;
+	color: $h1;
 }
 
 @mixin text($align) {
 	font-family: 'Source Code Pro';
 	font-size: 1em;
 	text-align: $align;
-	color: #717171;
 	letter-spacing: 0.4px;
+	color: $text;
 }

@@ -15,25 +15,25 @@
 }
 
 .Button__primary {
-  background-color: #3da9fc;
+  background-color: #4b7bec;
   color: #252628;
   font-weight: bold;
 }
 
 .Button__secondary {
-  color: #3da9fc;
-  border: 1px solid #3da9fc;
+  color: #4b7bec;
+  border: 1px solid #4b7bec;
   background-color: transparent;
 }
 
 .Button__tertiary {
-  color: #3da9fc;
+  color: #4b7bec;
   border: none;
   background-color: transparent;
 }
 
 .Button:hover {
-  border-color: #205985;
-  background-color: #205985;
+  border-color: #304f97;
+  background-color: #304f97;
   color: #fff;
 }
