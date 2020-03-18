@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 // Styles
 import style from './InfoBar.module.css';
-import IconBtn from '../components/buttons/IconBtn';
-import Button from '../components/Button';
+import IconBtn from '../buttons/IconBtn';
+import Button from '../Button/Button';
 
 function InfoBar({ title, description, hrefCode, hrefDemo, image = '' }) {
 	const [isExpand, setIsExpand] = useState(true);

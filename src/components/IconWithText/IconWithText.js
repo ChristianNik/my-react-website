@@ -2,7 +2,7 @@ import React from 'react';
 // Style
 import style from './IconWithText.module.css';
 // Components
-import Icon from './icons';
+import Icon from '../icons';
 
 function IconWithText({
 	name = '',

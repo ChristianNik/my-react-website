@@ -1,7 +1,7 @@
 import React from 'react';
 // Components
-import List from '../components/List';
-import ListGroup from '../components/ListGroup';
+import List from '../components/List/List';
+import ListGroup from '../components/List/ListGroup';
 // Styles!
 import style from './Skills.module.css';
 // Icons

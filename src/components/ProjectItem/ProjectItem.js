@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import style from './ProjectItem.module.css';
 // Icons
 // Components
-import Button from '../components/Button';
 
 function ProjectItem(props) {
 	return (

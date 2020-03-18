@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // Components
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/Sidebar/Sidebar';
 // Routes
 import Home from './Routes/Home';
 import About from './Routes/About';

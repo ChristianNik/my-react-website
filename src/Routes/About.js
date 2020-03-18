@@ -1,7 +1,7 @@
 import React from 'react';
 // Components
-import List from '../components/List';
-import IconWithText from '../components/IconWithText';
+import List from '../components/List/List';
+import IconWithText from '../components/IconWithText/IconWithText';
 // Styles
 import style from './About.module.css';
 

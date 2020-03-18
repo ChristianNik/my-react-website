@@ -1,11 +1,11 @@
 import React from 'react';
 // Components
-import LinkGroup from './LinkGroup';
-import LinkItem from './LinkItem';
+import LinkGroup from '../Link/LinkGroup';
+import LinkItem from '../Link/LinkItem';
 // Styles
 import sidebarStyle from './Sidebar.module.css';
 // Icons
-import Icon from './icons';
+import Icon from '../icons';
 
 function Sidebar() {
 	const START_ICON_SIZE = 36;

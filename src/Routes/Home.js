@@ -1,6 +1,6 @@
 import React from 'react';
 // Components
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 // Styles
 import style from './Home.module.css';
 // Icons

@@ -4,7 +4,7 @@ import contactStyle from './Contact.module.css';
 // Icons
 
 // Components
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 function Contact() {
 	return (
 		<div className={`${contactStyle.Contact} page`}>
