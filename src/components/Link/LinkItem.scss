@@ -12,12 +12,15 @@
 	&__link {
 		padding: 7px 0px;
 		width: 100%;
+		min-width: 64px;
 		text-align: center;
 		text-decoration: none;
 		color: inherit;
 		display: flex;
 		justify-content: center;
 		align-content: center;
+		justify-items: center;
+		align-items: center;
 	}
 	&__link__active {
 		transition: all 300ms;

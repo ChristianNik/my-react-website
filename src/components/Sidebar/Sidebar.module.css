@@ -25,6 +25,17 @@
   }
 }
 
+@media (max-width: 575px) {
+  .Sidebar {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .Sidebar ul:first-child,
+  .Sidebar ul:last-child {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .Sidebar {
     width: 64px;

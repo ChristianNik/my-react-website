@@ -24,6 +24,16 @@
 	}
 }
 
+@media (max-width: 575px) {
+	.Sidebar {
+		ul:first-child,
+		ul:last-child {
+			display: none;
+		}
+		grid-template-columns: 1fr;
+	}
+}
+
 // Medium devices (tablets)
 @media (min-width: map-get($layout, medium)) {
 	.Sidebar {
