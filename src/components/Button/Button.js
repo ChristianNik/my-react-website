@@ -7,31 +7,43 @@ import style from './Button.module.css';
 // Components
 
 function Button(props) {
-	let nameOfClass = '';
-	switch (props.type) {
-		case 'primary':
-			nameOfClass = style.Button__primary;
-			break;
-		case 'secondary':
-			nameOfClass = style.Button__secondary;
-			break;
-		case 'tertiary':
-			nameOfClass = style.Button__tertiary;
-			break;
-		default:
-			break;
+	function selectClassNames(init = []) {
+		const classNamesList = init;
+		switch (props.type) {
+			case 'primary':
+				classNamesList.push(style.Button__primary);
+				break;
+			case 'secondary':
+				classNamesList.push(style.Button__secondary);
+				break;
+			case 'tertiary':
+				classNamesList.push(style.Button__tertiary);
+				break;
+			default:
+				break;
+		}
+		if (props.className) {
+			classNamesList.push(props.className);
+		}
+		if (props.uppercase) {
+			classNamesList.push(style.Text__uppercase);
+		}
+		return classNamesList;
 	}
+
+	const classNames = selectClassNames([style.Button]).join(' ');
+
 	return props.href ? (
 		<a
 			target='_blank'
 			href={props.href}
 			rel='noopener noreferrer'
-			className={`${style.Button} ${nameOfClass}`}
+			className={classNames}
 		>
 			{props.text}
 		</a>
 	) : (
-		<Link to={props.to || ''} className={`${style.Button} ${nameOfClass}`}>
+		<Link to={props.to || ''} className={classNames}>
 			{props.text}
 		</Link>
 	);
