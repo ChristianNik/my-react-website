@@ -1,5 +1,7 @@
 @import '../../scss/variables';
 @import '../../scss/typography';
 
-.Home {
+.Page {
+	grid-area: content;
+	color: $light;
 }

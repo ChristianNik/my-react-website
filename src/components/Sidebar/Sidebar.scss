@@ -1,5 +1,5 @@
-@import '../scss/variables';
-@import '../scss/typography';
+@import '../../scss/variables';
+@import '../../scss/typography';
 
 .Sidebar {
 	position: fixed;
@@ -9,6 +9,7 @@
 	color: #707070;
 	display: grid;
 	grid-template-rows: 1fr 2fr 1fr;
+	z-index: 100;
 	&__Logo {
 		width: 32px;
 		height: 32px;

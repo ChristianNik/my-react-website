@@ -8,6 +8,7 @@
   display: grid;
   -ms-grid-rows: 1fr 2fr 1fr;
       grid-template-rows: 1fr 2fr 1fr;
+  z-index: 100;
 }
 
 .Sidebar__Logo {

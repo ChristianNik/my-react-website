@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+@import '../../scss/typography';
+
+.Title {
+	text-align: left;
+	font-size: 1rem;
+	letter-spacing: 0.27px;
+	color: $light;
+}
+.Title__uppercase {
+	text-transform: uppercase;
+}
+.Title__small {
+	font-size: map-get($size, small);
+}
+.Title__medium {
+	font-size: map-get($size, medium);
+}
+.Title__large {
+	font-size: map-get($size, large);
+}

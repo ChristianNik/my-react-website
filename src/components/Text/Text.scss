@@ -1,0 +1,18 @@
+@import '../../scss/variables';
+@import '../../scss/typography';
+
+.Text {
+	font-family: 'Source Code Pro';
+	font-size: 1rem;
+	letter-spacing: 0.4px;
+	color: $text;
+}
+.Text__small {
+	font-size: map-get($size, small);
+}
+.Text__medium {
+	font-size: map-get($size, medium);
+}
+.Text__large {
+	font-size: map-get($size, large);
+}
