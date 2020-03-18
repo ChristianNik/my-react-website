@@ -8,7 +8,7 @@
 }
 
 // Small devices (landscape phones)
-@media (max-width: map-get($layout, small)) {
+@media (max-width: 0) {
 	.Text {
 		font-size: map-get($typoText, small);
 	}

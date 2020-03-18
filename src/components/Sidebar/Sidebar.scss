@@ -9,9 +9,36 @@
 	color: #707070;
 	display: grid;
 	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-columns: 1fr;
 	z-index: 100;
-	&__Logo {
-		width: 32px;
-		height: 32px;
+}
+
+// Small devices (landscape phones)
+@media (min-width: 0) {
+	.Sidebar {
+		width: 100vw;
+		height: 64px;
+		bottom: 0;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 2fr 1fr;
 	}
+}
+
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+	.Sidebar {
+		width: 64px;
+		height: 100vh;
+		bottom: 0;
+		grid-template-rows: 1fr 2fr 1fr;
+		grid-template-columns: 1fr;
+	}
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+}
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
 }

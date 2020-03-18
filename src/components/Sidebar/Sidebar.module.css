@@ -8,10 +8,31 @@
   display: grid;
   -ms-grid-rows: 1fr 2fr 1fr;
       grid-template-rows: 1fr 2fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   z-index: 100;
 }
 
-.Sidebar__Logo {
-  width: 32px;
-  height: 32px;
+@media (min-width: 0) {
+  .Sidebar {
+    width: 100vw;
+    height: 64px;
+    bottom: 0;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .Sidebar {
+    width: 64px;
+    height: 100vh;
+    bottom: 0;
+    -ms-grid-rows: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }

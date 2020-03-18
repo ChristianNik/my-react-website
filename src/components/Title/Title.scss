@@ -11,7 +11,7 @@
 }
 
 // Small devices (landscape phones)
-@media (max-width: map-get($layout, small)) {
+@media (min-width: 0) {
 	.Title {
 		font-size: map-get($typoTitle, small);
 	}

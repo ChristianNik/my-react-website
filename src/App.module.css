@@ -11,7 +11,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 0) {
   .App {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -21,16 +21,12 @@
   }
 }
 
-/*
-// Medium devices (tablets)
-@media (min-width: map-get($layout, medium)) {
+@media (min-width: 768px) {
+  .App {
+    -ms-grid-columns: 64px 1fr;
+        grid-template-columns: 64px 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: '. content';
+  }
 }
-
-// Large devices (desktops)
-@media (min-width: map-get($layout, large)) {
-}
-
-// Extra large devices (large desktops)
-@media (min-width: map-get($layout, largeExtra)) {
-}
-*/
