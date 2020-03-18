@@ -1,11 +1,11 @@
 import React from 'react';
 // Components
-import List from '../components/List/List';
-import ListGroup from '../components/List/ListGroup';
+import List from '../../components/List/List';
+import ListGroup from '../../components/List/ListGroup';
 // Styles!
 import style from './Skills.module.css';
 // Icons
-import Icon from '../components/icons';
+import Icon from '../../components/icons';
 
 function Skills() {
 	return (

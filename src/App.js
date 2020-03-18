@@ -4,11 +4,11 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // Components
 import Sidebar from './components/Sidebar/Sidebar';
 // Routes
-import Home from './Routes/Home';
-import About from './Routes/About';
-import Skills from './Routes/Skills';
-import Contact from './Routes/Contact';
-import Projects from './Routes/Projects';
+import Home from './Routes/Home/Home';
+import About from './Routes/About/About';
+import Skills from './Routes/Skills/Skills';
+import Contact from './Routes/Contact/Contact';
+import Projects from './Routes/Projects/Projects';
 // Styles
 import './App.css';
 // Icons

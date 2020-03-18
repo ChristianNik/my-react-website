@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 // Styles
 import style from './Projects.module.css';
 // Icons / Images
-import busSystemImage from '../images/reisebus - verwaltung.gif';
-import mywebsiteImage from '../images/my Website.png';
-import mywebsiteV2Image from '../images/myWebsite v2.png';
+import busSystemImage from '../../images/reisebus - verwaltung.gif';
+import mywebsiteImage from '../../images/my Website.png';
+import mywebsiteV2Image from '../../images/myWebsite v2.png';
 // Components
-import ProjectItem from '../components/ProjectItem/ProjectItem';
-import InfoBar from '../components/InfoBar/InfoBar';
+import ProjectItem from '../../components/ProjectItem/ProjectItem';
+import InfoBar from '../../components/InfoBar/InfoBar';
 
 function Projects(props) {
 	const [title, setTitle] = useState('');

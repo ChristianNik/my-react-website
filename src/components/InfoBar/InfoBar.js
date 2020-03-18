@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // Styles
 import style from './InfoBar.module.css';
-import IconBtn from '../buttons/IconBtn';
+import IconBtn from '../IconBtn/IconBtn';
 import Button from '../Button/Button';
 
 function InfoBar({ title, description, hrefCode, hrefDemo, image = '' }) {

@@ -1,5 +1,5 @@
-@import '../scss/variables';
-@import '../scss/typography';
+@import '../../scss/variables';
+@import '../../scss/typography';
 
 .About {
 	display: grid;
@@ -26,7 +26,7 @@
 
 	&__photo {
 		grid-area: foto;
-		background-image: url('../images/Bewerbungs Foto Dark.jpg');
+		background-image: url('../../images/Bewerbungs Foto Dark.jpg');
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-size: cover;
