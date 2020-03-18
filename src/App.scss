@@ -1,0 +1,34 @@
+@import 'scss/variables';
+@import 'scss/typography';
+
+.App {
+	display: grid;
+	grid-template-columns: 64px 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: '. content';
+	height: 100vh;
+	background-color: #252628;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+// Small devices (landscape phones)
+@media (max-width: map-get($layout, small)) {
+	.App {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 64px;
+		grid-template-areas: 'content' '.';
+	}
+}
+/*
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+}
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
+}
+*/

@@ -10,13 +10,13 @@ import Skills from './Routes/Skills/Skills';
 import Contact from './Routes/Contact/Contact';
 import Projects from './Routes/Projects/Projects';
 // Styles
-import './App.css';
+import style from './App.module.css';
 // Icons
 
 function App() {
 	return (
 		<Router>
-			<div className='App'>
+			<div className={style.App}>
 				<Sidebar />
 				<Switch>
 					<Route exact path='/' component={Home} />

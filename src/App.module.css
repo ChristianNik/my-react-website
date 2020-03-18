@@ -1,0 +1,36 @@
+.App {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 64px 1fr;
+      grid-template-columns: 64px 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: '. content';
+  height: 100vh;
+  background-color: #252628;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media (max-width: 360px) {
+  .App {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 64px;
+        grid-template-rows: 1fr 64px;
+        grid-template-areas: 'content' '.';
+  }
+}
+
+/*
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+}
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
+}
+*/

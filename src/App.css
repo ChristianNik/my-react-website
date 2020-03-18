@@ -1,8 +1,0 @@
-.App {
-	display: grid;
-	grid-template-columns: 64px 1fr;
-	grid-template-areas: '. content';
-	height: 100vh;
-	background-color: #252628;
-	font-family: 'Source Sans Pro', sans-serif;
-}
