@@ -11,7 +11,7 @@ import Text from '../../components/Text/Text';
 function Home() {
 	return (
 		<Page className={style.Home}>
-			<Title small uppercase>
+			<Title uppercase>
 				Hey, <span className={animation.wave}>👋</span>
 				<br />
 				ich bin <br />

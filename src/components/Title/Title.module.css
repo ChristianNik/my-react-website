@@ -1,6 +1,5 @@
 .Title {
   text-align: left;
-  font-size: 1rem;
   letter-spacing: 0.27px;
   color: #fff;
 }
@@ -9,14 +8,26 @@
   text-transform: uppercase;
 }
 
-.Title__small {
-  font-size: 2.5rem;
+@media (max-width: 360px) {
+  .Title {
+    font-size: 3rem;
+  }
 }
 
-.Title__medium {
-  font-size: 5rem;
+@media (min-width: 768px) {
+  .Title {
+    font-size: 5rem;
+  }
 }
 
-.Title__large {
-  font-size: 10rem;
+@media (min-width: 992px) {
+  .Title {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Title {
+    font-size: 9rem;
+  }
 }

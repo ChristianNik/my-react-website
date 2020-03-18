@@ -39,9 +39,25 @@ $text2: map-get($mono, d);
 
 $background: map-get($mono, f);
 
+// layout
+$layout: (
+	small: 360px,
+	medium: 768px,
+	large: 992px,
+	largeExtra: 1024px
+);
+
 // typography
-$size: (
-	small: 2.5rem,
+$typoTitle: (
+	small: 3rem,
 	medium: 5rem,
-	large: 10rem
+	large: 7rem,
+	largeExtra: 9rem
+);
+
+$typoText: (
+	small: 1rem,
+	medium: 1.1rem,
+	large: 1.2rem,
+	largeExtra: 1.3rem
 );

@@ -7,13 +7,6 @@ function Title(props) {
 		if (props.uppercase) {
 			classNamesList.push(style.Title__uppercase);
 		}
-		if (props.small) {
-			classNamesList.push(style.Title__small);
-		} else if (props.medium) {
-			classNamesList.push(style.Title__medium);
-		} else if (props.large) {
-			classNamesList.push(style.Title__large);
-		}
 		return classNamesList;
 	}
 

@@ -7,13 +7,6 @@ function Text(props) {
 		if (props.uppercase) {
 			classNamesList.push(style.Text__uppercase);
 		}
-		if (props.small) {
-			classNamesList.push(style.Text__small);
-		} else if (props.medium) {
-			classNamesList.push(style.Text__medium);
-		} else if (props.large) {
-			classNamesList.push(style.Text__large);
-		}
 		return classNamesList;
 	}
 
