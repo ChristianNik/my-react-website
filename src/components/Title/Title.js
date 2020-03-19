@@ -10,7 +10,15 @@ function Title(props) {
 		if (props.uppercase) {
 			classNamesList.push(style.Title__uppercase);
 		}
-
+		if (props.light) {
+			classNamesList.push(style.Title__light);
+		}
+		if (props.regular) {
+			classNamesList.push(style.Title__regular);
+		}
+		if (props.bold) {
+			classNamesList.push(style.Title__bold);
+		}
 		return classNamesList;
 	}
 

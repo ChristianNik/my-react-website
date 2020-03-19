@@ -7,8 +7,18 @@
 	line-height: 100%;
 	color: $light;
 }
+
 .Title__uppercase {
 	text-transform: uppercase;
+}
+.Title__light {
+	font-weight: 100;
+}
+.Title__regular {
+	font-weight: 400;
+}
+.Title__bold {
+	font-weight: bold;
 }
 
 // Small devices (landscape phones)

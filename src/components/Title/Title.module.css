@@ -9,6 +9,18 @@
   text-transform: uppercase;
 }
 
+.Title__light {
+  font-weight: 100;
+}
+
+.Title__regular {
+  font-weight: 400;
+}
+
+.Title__bold {
+  font-weight: bold;
+}
+
 @media (min-width: 0) {
   .Title {
     font-size: 3rem;
