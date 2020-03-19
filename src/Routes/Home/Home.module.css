@@ -19,16 +19,13 @@
   .Home {
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 130px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .Home__text {
     margin-top: 20px;
     margin-bottom: 40px;
-  }
-  .Home__button {
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
   }
 }
 
