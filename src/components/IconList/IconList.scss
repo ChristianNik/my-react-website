@@ -1,0 +1,12 @@
+.IconList {
+	display: flex;
+	flex-direction: column;
+	&__Container {
+		display: flex;
+		flex-wrap: wrap;
+		> :nth-child(even) {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+}
