@@ -5,6 +5,7 @@
 	position: fixed;
 	width: 64px;
 	height: 100vh;
+	top: 0;
 	background-color: map-get($mono, f);
 	color: #707070;
 	display: grid;
@@ -16,9 +17,9 @@
 // Small devices (landscape phones)
 @media (min-width: 0) {
 	.Sidebar {
+		top: calc(100vh - 64px);
 		width: 100vw;
 		height: 64px;
-		bottom: 0;
 		grid-template-rows: 1fr;
 		grid-template-columns: 1fr 2fr 1fr;
 	}
@@ -26,20 +27,20 @@
 
 @media (max-width: 575px) {
 	.Sidebar {
+		grid-template-columns: 1fr;
 		ul:first-child,
 		ul:last-child {
 			display: none;
 		}
-		grid-template-columns: 1fr;
 	}
 }
 
 // Medium devices (tablets)
 @media (min-width: map-get($layout, medium)) {
 	.Sidebar {
+		top: 0;
 		width: 64px;
 		height: 100vh;
-		bottom: 0;
 		grid-template-rows: 1fr 2fr 1fr;
 		grid-template-columns: 1fr;
 	}

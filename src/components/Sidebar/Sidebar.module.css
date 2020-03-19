@@ -2,6 +2,7 @@
   position: fixed;
   width: 64px;
   height: 100vh;
+  top: 0;
   background-color: #070c17;
   color: #707070;
   display: -ms-grid;
@@ -15,9 +16,9 @@
 
 @media (min-width: 0) {
   .Sidebar {
+    top: calc(100vh - 64px);
     width: 100vw;
     height: 64px;
-    bottom: 0;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -ms-grid-columns: 1fr 2fr 1fr;
@@ -38,9 +39,9 @@
 
 @media (min-width: 768px) {
   .Sidebar {
+    top: 0;
     width: 64px;
     height: 100vh;
-    bottom: 0;
     -ms-grid-rows: 1fr 2fr 1fr;
         grid-template-rows: 1fr 2fr 1fr;
     -ms-grid-columns: 1fr;
