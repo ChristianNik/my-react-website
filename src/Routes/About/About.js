@@ -3,20 +3,25 @@ import React from 'react';
 import IconList from '../../components/IconList/IconList';
 // Styles
 import style from './About.module.css';
+import Page from '../../components/Page/Page';
+import Title from '../../components/Title/Title';
+import Text from '../../components/Text/Text';
 
 function About() {
 	return (
-		<div className={`${style.About} page`}>
+		<Page className={style.About}>
 			<div className={style.About__Content}>
-				<h1 className={style.About__title}>Über mich</h1>
-				<p className={style.About__description}>
+				<Title regular className={style.About__title}>
+					Über mich
+				</Title>
+				<Text className={style.About__description}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
 					delectus, eius incidunt recusandae eligendi sint odit natus maiores
 					consequatur reprehenderit asperiores voluptatum iste nulla aperiam
 					quia necessitatibus nihil iusto cum obcaecati repellendus corporis
 					similique et. Cum saepe accusamus illo dolorum ad autem quisquam sed
 					magnam error eveniet? Aperiam, impedit culpa.
-				</p>
+				</Text>
 			</div>
 			<div className={style.About__photo}></div>
 			<div className={style.About__Info}>
@@ -30,8 +35,8 @@ function About() {
 					]}
 				/>
 				<IconList
-					className={style.Info__Hobbys}
-					caption='HOBBYS'
+					className={style.Info__Other}
+					caption='ANDERES'
 					color='#fff'
 					content={[
 						{ text: 'Führerschein', icon: 'card', fill: '#fff' },
@@ -40,7 +45,7 @@ function About() {
 					]}
 				/>
 			</div>
-		</div>
+		</Page>
 	);
 }
 

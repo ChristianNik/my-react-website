@@ -15,7 +15,12 @@ function IconList(props) {
 	const classNames = selectClassNames([style.IconList]).join(' ');
 	return (
 		<div className={classNames}>
-			<h2 style={{ color: props.color || '' }}>{props.caption}</h2>
+			<h2
+				style={{ color: props.color || '' }}
+				className={style.IconList__caption}
+			>
+				{props.caption}
+			</h2>
 			<div className={style.IconList__Container}>
 				{props.content
 					? props.content.map(item => {

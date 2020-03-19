@@ -10,6 +10,9 @@ function Title(props) {
 		if (props.uppercase) {
 			classNamesList.push(style.Title__uppercase);
 		}
+		if (props.centered) {
+			classNamesList.push(style.Title__centered);
+		}
 		if (props.light) {
 			classNamesList.push(style.Title__light);
 		}

@@ -9,6 +9,10 @@
   text-transform: uppercase;
 }
 
+.Title__centered {
+  text-align: center;
+}
+
 .Title__light {
   font-weight: 100;
 }
