@@ -1,18 +1,18 @@
 @import '../../scss/variables';
 @import '../../scss/typography';
 
-
 $padding: 45px;
 
 .Skills {
 	display: grid;
-	grid-template-columns: $padding 1fr 1fr $padding;
-	grid-template-rows: $padding 1fr 1fr $padding;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	text-align: center;
 
 	&__Content {
-		grid-column: 2 / 4;
-		grid-row: 2 / 4;
+		margin: 45px;
+		grid-column: 1 / 3;
+		grid-row: 1 / 3;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -20,8 +20,7 @@ $padding: 45px;
 		padding-top: 130px;
 	}
 	&__title {
-		@include h1(center);
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 	}
 	&__List {
 		margin-bottom: 70px;
@@ -36,11 +35,8 @@ $padding: 45px;
 		}
 	}
 
-	.bg__black {
-		grid-column: span 2;
-	}
 	.bg__blue {
-		grid-column: 3 / span 2;
+		grid-column: 2 / span 1;
 		grid-row: 1 / -1;
 		background-color: $prime;
 	}

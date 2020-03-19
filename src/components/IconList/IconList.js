@@ -30,6 +30,7 @@ function IconList(props) {
 									name={item.icon}
 									text={item.text}
 									fill={item.fill}
+									width={item.size}
 								/>
 							);
 					  })
