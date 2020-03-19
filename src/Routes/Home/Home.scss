@@ -2,4 +2,47 @@
 @import '../../scss/typography';
 
 .Home {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 25px;
+	&__title {
+	}
+	&__text {
+	}
+	&__button {
+		align-self: start;
+	}
+}
+
+// Small devices (landscape phones)
+@media (min-width: 0) {
+	.Home {
+		justify-self: center;
+		margin-top: 130px;
+		&__title {
+		}
+		&__text {
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+		&__button {
+			align-self: start;
+		}
+	}
+}
+
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+	.Home {
+		justify-self: left;
+		align-self: center;
+	}
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+}
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
 }

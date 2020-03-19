@@ -11,16 +11,21 @@ import Text from '../../components/Text/Text';
 function Home() {
 	return (
 		<Page className={style.Home}>
-			<Title uppercase>
+			<Title className={style.Home__title} uppercase>
 				Hey, <span className={animation.wave}>👋</span>
 				<br />
 				ich bin <br />
 				Christian.
 			</Title>
-			<Text>
+			<Text className={style.Home__text}>
 				Informationstechnischer Assistent <br /> Junior Frontend Entwickler
 			</Text>
-			<Button type='secondary' text='Meine Projekte' to='/projects' />
+			<Button
+				className={style.Home__button}
+				type='secondary'
+				text='Meine Projekte'
+				to='/projects'
+			/>
 		</Page>
 	);
 }

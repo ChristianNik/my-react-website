@@ -2,8 +2,11 @@ import React from 'react';
 import style from './Text.module.css';
 
 function Text(props) {
-	function selectClassNames(init) {
+	function selectClassNames(init = []) {
 		const classNamesList = init;
+		if (props.className) {
+			classNamesList.push(props.className);
+		}
 		if (props.uppercase) {
 			classNamesList.push(style.Text__uppercase);
 		}

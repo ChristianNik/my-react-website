@@ -2,11 +2,15 @@ import React from 'react';
 import style from './Title.module.css';
 
 function Title(props) {
-	function selectClassNames(init) {
+	function selectClassNames(init = []) {
 		const classNamesList = init;
+		if (props.className) {
+			classNamesList.push(props.className);
+		}
 		if (props.uppercase) {
 			classNamesList.push(style.Title__uppercase);
 		}
+
 		return classNamesList;
 	}
 

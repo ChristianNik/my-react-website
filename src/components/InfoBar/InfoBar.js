@@ -30,7 +30,7 @@ function InfoBar({ title, description, hrefCode, hrefDemo, image = '' }) {
 							width: '100%'
 						}}
 					>
-						<a target='_blank' href={hrefCode}>
+						<a target='_blank' rel='noopener noreferrer' href={hrefCode}>
 							<IconBtn name='github' />
 						</a>
 						<IconBtn name='dots' />
