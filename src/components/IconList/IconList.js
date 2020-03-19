@@ -21,6 +21,7 @@ function IconList(props) {
 					? props.content.map(item => {
 							return (
 								<IconWithText
+									key={Math.random()}
 									name={item.icon}
 									text={item.text}
 									fill={item.fill}
