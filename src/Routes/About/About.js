@@ -1,7 +1,6 @@
 import React from 'react';
 // Components
-import List from '../../components/List/List';
-import IconWithText from '../../components/IconWithText/IconWithText';
+import IconList from '../../components/IconList/IconList';
 // Styles
 import style from './About.module.css';
 
@@ -21,25 +20,25 @@ function About() {
 			</div>
 			<div className={style.About__photo}></div>
 			<div className={style.About__Info}>
-				<List className={style.Info__Hobbys} gap={15} flow='row' title='HOBBYS'>
-					<IconWithText name='run' text='Joggen' fill='#fff' />
-					<IconWithText name='laptop' text='Programmieren' fill='#fff' />
-				</List>
-				<List
+				<IconList
 					className={style.Info__Hobbys}
-					gap={10}
-					flow='column'
-					title='ANDERES'
-				>
-					<IconWithText
-						name='card'
-						flow='row'
-						text='Führerschein'
-						fill='#fff'
-					/>
-					<IconWithText name='car' flow='row' text='Auto' fill='#fff' />
-					<IconWithText name='' flow='row' text='Nichtraucher' fill='#fff' />
-				</List>
+					color='#fff'
+					caption='HOBBYS'
+					content={[
+						{ text: 'Joggen', icon: 'run', fill: '#fff' },
+						{ text: 'Programmieren', icon: 'laptop', fill: '#fff' }
+					]}
+				/>
+				<IconList
+					className={style.Info__Hobbys}
+					caption='HOBBYS'
+					color='#fff'
+					content={[
+						{ text: 'Führerschein', icon: 'card', fill: '#fff' },
+						{ text: 'Auto', icon: 'car', fill: '#fff' },
+						{ text: 'Nichtraucher', icon: '', fill: '#fff' }
+					]}
+				/>
 			</div>
 		</div>
 	);

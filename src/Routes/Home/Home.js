@@ -7,6 +7,7 @@ import animation from '../../scss/animation.module.css';
 import Page from '../../components/Page/Page';
 import Title from '../../components/Title/Title';
 import Text from '../../components/Text/Text';
+
 // Icons
 function Home() {
 	return (
@@ -17,6 +18,7 @@ function Home() {
 				ich bin <br />
 				Christian.
 			</Title>
+
 			<Text className={style.Home__text}>
 				Informationstechnischer Assistent <br /> Junior Frontend Entwickler
 			</Text>
