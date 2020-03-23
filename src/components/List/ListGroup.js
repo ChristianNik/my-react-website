@@ -1,18 +1,8 @@
 import React from 'react';
+import style from './ListGroup.module.css';
 
 function ListGroup(props) {
-	return (
-		<div
-			style={{
-				width: props.width || '100%',
-				display: 'flex',
-				justifyContent: 'space-between'
-			}}
-			className='ListGroup'
-		>
-			{props.children}
-		</div>
-	);
+	return <div className={style.ListGroup}>{props.children}</div>;
 }
 
 export default ListGroup;

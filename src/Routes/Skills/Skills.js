@@ -13,6 +13,7 @@ import Icon from '../../components/icons';
 function Skills() {
 	return (
 		<Page className={style.Skills}>
+			<div className={style.bg__black}></div>
 			<div className={style.bg__blue}></div>
 			<div className={style.Skills__Content}>
 				<Title regular className={style.Skills__title}>
