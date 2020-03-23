@@ -33,20 +33,30 @@ function Button(props) {
 
 	const classNames = selectClassNames([style.Button]).join(' ');
 
-	return props.href ? (
-		<a
-			target='_blank'
-			href={props.href}
-			rel='noopener noreferrer'
-			className={classNames}
-		>
-			{props.children}
-		</a>
-	) : (
-		<Link to={props.to || ''} className={classNames}>
-			{props.children}
-		</Link>
-	);
+	if (props.href) {
+		return (
+			<a
+				target='_blank'
+				href={props.href}
+				rel='noopener noreferrer'
+				className={classNames}
+			>
+				{props.children}
+			</a>
+		);
+	} else if (props.onClick) {
+		return (
+			<button className={classNames} onClick={props.onClick}>
+				{props.children}
+			</button>
+		);
+	} else {
+		return (
+			<Link to={props.to || ''} className={classNames}>
+				{props.children}
+			</Link>
+		);
+	}
 }
 
 export default Button;

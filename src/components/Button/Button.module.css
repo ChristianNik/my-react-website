@@ -12,6 +12,7 @@
   font-family: 'Arial';
   color: inherit;
   text-align: center;
+  background-color: transparent;
 }
 
 .Button__primary {
