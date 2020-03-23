@@ -22,12 +22,9 @@ function Home() {
 			<Text className={style.Home__text}>
 				Informationstechnischer Assistent <br /> Junior Frontend Entwickler
 			</Text>
-			<Button
-				className={style.Home__button}
-				type='secondary'
-				text='Meine Projekte'
-				to='/projects'
-			/>
+			<Button className={style.Home__button} type='secondary' to='/projects'>
+				Meine Projekte
+			</Button>
 		</Page>
 	);
 }

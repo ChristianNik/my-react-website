@@ -40,11 +40,11 @@ function Button(props) {
 			rel='noopener noreferrer'
 			className={classNames}
 		>
-			{props.text}
+			{props.children}
 		</a>
 	) : (
 		<Link to={props.to || ''} className={classNames}>
-			{props.text}
+			{props.children}
 		</Link>
 	);
 }
