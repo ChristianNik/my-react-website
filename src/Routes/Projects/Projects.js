@@ -8,6 +8,8 @@ import mywebsiteV2Image from '../../images/myWebsite v2.png';
 // Components
 import ProjectItem from '../../components/ProjectItem/ProjectItem';
 import InfoBar from '../../components/InfoBar/InfoBar';
+import Page from '../../components/Page/Page';
+import Title from '../../components/Title/Title';
 
 function Projects(props) {
 	const [title, setTitle] = useState('');
@@ -75,7 +77,7 @@ function Projects(props) {
 	}, []);
 
 	return (
-		<div className={`${style.Projects} page`}>
+		<Page className={style.Projects}>
 			<div className={style.Projects__Header}>
 				<h1>Projekte</h1>
 			</div>
@@ -101,7 +103,7 @@ function Projects(props) {
 				)}
 			</div>
 			<InfoBar {...{ title, description, hrefCode, hrefDemo, image }} />
-		</div>
+		</Page>
 	);
 }
 

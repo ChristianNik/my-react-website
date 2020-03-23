@@ -10,7 +10,7 @@
 	transition: all 300ms;
 	width: 0;
 	&__expand {
-		width: 30vw;
+		width: calc(30vw + 15px);
 	}
 	&__Content {
 		padding: 25px;

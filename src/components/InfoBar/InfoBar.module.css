@@ -10,7 +10,7 @@
 }
 
 .InfoBar__expand {
-  width: 30vw;
+  width: calc(30vw + 15px);
 }
 
 .InfoBar__Content {
