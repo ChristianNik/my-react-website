@@ -6,28 +6,37 @@ import style from './Button.module.css';
 // Icons
 // Components
 
+function getDrink(type) {
+	return (
+		'The drink I chose was ' +
+		{
+			coke: 'Coke',
+			pepsi: 'Pepsi',
+			lemonade: 'Lemonade'
+		}[type]
+	);
+}
+
 function Button(props) {
 	function selectClassNames(init = []) {
 		const classNamesList = init;
-		switch (props.type) {
-			case 'primary':
-				classNamesList.push(style.Button__primary);
-				break;
-			case 'secondary':
-				classNamesList.push(style.Button__secondary);
-				break;
-			case 'tertiary':
-				classNamesList.push(style.Button__tertiary);
-				break;
-			default:
-				break;
-		}
-		if (props.className) {
-			classNamesList.push(props.className);
-		}
-		if (props.uppercase) {
-			classNamesList.push(style.Text__uppercase);
-		}
+
+		const switchStyle = {
+			primary: () => {
+				return classNamesList.push(style.Button__primary);
+			},
+			secondary: () => {
+				return classNamesList.push(style.Button__secondary);
+			},
+			tertiary: () => {
+				return classNamesList.push(style.Button__tertiary);
+			}
+		};
+		// Set Button Styles - Switch
+		if (props.type) switchStyle[props.type]();
+		if (props.className) classNamesList.push(props.className);
+		if (props.uppercase) classNamesList.push(style.Text__uppercase);
+
 		return classNamesList;
 	}
 
