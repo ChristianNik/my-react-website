@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Modal.module.css';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import Button from '../Button/Button';
 import Icon from '../icons';
 

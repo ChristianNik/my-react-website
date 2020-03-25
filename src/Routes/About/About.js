@@ -40,8 +40,7 @@ function About() {
 					color='#fff'
 					content={[
 						{ text: 'Führerschein', icon: 'card', fill: '#fff' },
-						{ text: 'Auto', icon: 'car', fill: '#fff' },
-						{ text: 'Nichtraucher', icon: '', fill: '#fff' }
+						{ text: 'Auto', icon: 'car', fill: '#fff' }
 					]}
 				/>
 			</div>

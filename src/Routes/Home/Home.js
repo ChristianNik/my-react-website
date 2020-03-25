@@ -13,7 +13,10 @@ function Home() {
 	return (
 		<Page className={style.Home}>
 			<Title className={style.Home__title} uppercase>
-				Hey, <span className={animation.wave}>👋</span>
+				Hey,{' '}
+				<span role='img' aria-label='hand' className={animation.wave}>
+					👋
+				</span>
 				<br />
 				ich bin <br />
 				Christian.

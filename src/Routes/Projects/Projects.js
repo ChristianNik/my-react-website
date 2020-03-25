@@ -7,7 +7,6 @@ import mywebsiteImage from '../../images/my Website.png';
 import mywebsiteV2Image from '../../images/myWebsite v2.png';
 // Components
 import ProjectItem from '../../components/ProjectItem/ProjectItem';
-import InfoBar from '../../components/InfoBar/InfoBar';
 import Page from '../../components/Page/Page';
 import Title from '../../components/Title/Title';
 import Modal from '../../components/Modal/Modal';
