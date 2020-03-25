@@ -5,13 +5,15 @@ import Button from '../Button/Button';
 import Icon from '../icons';
 
 function Modal(props) {
-	console.log(props.show);
-
 	if (props.show) {
 		return (
 			<div className={[style.Modal].join(' ')}>
 				<div className={style.Modal__Container}>
-					<Button className={style.Modal__close} onClick={props.onHide}>
+					<Button
+						type='tertiary'
+						className={style.Modal__close}
+						onClick={props.onHide}
+					>
 						<Icon name='close' fill='#fff' width='32px' />
 					</Button>
 					<img className={style.Modal__image} src={props.image} alt='' />
@@ -19,13 +21,13 @@ function Modal(props) {
 						<h2 className={style.Modal__title}>{props.title}</h2>
 						<div className={style.Modal__Links}>
 							{props.hrefDemo ? (
-								<Button href={props.hrefDemo} type='primary'>
+								<Button type='primary' href={props.hrefDemo}>
 									DEMO
 								</Button>
 							) : (
 								''
 							)}
-							<Button rounded href={props.hrefCode}>
+							<Button type='tertiary' rounded href={props.hrefCode}>
 								<Icon name='github' fill='#fff' width='28px' />
 							</Button>
 						</div>
