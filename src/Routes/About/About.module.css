@@ -3,8 +3,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 2fr auto 2fr;
-      grid-template-rows: 2fr auto 2fr;
+  -ms-grid-rows: 1fr 1.1fr 1fr;
+      grid-template-rows: 1fr 1.1fr 1fr;
       grid-template-areas: 'content' 'foto' 'info';
 }
 
@@ -45,10 +45,10 @@
   grid-area: info;
   background-color: #4b7bec;
   padding: 15px 25px;
-  margin-bottom: 64px;
 }
 
 .About__Info .Info__Hobbys {
+  padding-top: 50px;
   margin-bottom: 25px;
 }
 

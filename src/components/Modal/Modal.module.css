@@ -13,6 +13,7 @@
     place-items: center;
   }
   .Modal__Container {
+    height: 100vh;
     max-width: 750px;
     background-color: #070c17;
     position: relative;
@@ -34,6 +35,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -74,7 +77,8 @@
 
 @media (min-width: 992px) {
   .Modal {
-    position: absolute;
+    position: fixed;
+    overflow: hidden;
     top: 0;
     left: 0;
     right: 0;
@@ -86,6 +90,7 @@
     place-items: center;
   }
   .Modal__Container {
+    height: auto;
     max-width: 750px;
     width: 50vw;
     margin: 0 auto;

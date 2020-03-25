@@ -4,7 +4,7 @@
 .About {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 2fr auto 2fr;
+	grid-template-rows: 1fr 1.1fr 1fr;
 	grid-template-areas: 'content' 'foto' 'info';
 	&__Content {
 		grid-area: content;
@@ -34,9 +34,9 @@
 		grid-area: info;
 		background-color: $prime;
 		padding: 15px 25px;
-		margin-bottom: 64px;
 
 		.Info__Hobbys {
+			padding-top: 50px;
 			margin-bottom: 25px;
 		}
 	}

@@ -54,7 +54,7 @@
 		text-align: center;
 
 		&__Content {
-			margin: 45px;
+			margin: 45px 0 105px 0;
 			grid-column: 1 / 3;
 			grid-row: 1 / 3;
 			display: flex;
@@ -94,6 +94,49 @@
 
 // Medium devices (tablets)
 @media (min-width: map-get($layout, medium)) {
+	.Skills {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		text-align: center;
+
+		&__Content {
+			margin: 45px;
+			grid-column: 1 / 3;
+			grid-row: 1 / 3;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: #3a3b3d;
+			padding: 40px;
+		}
+		&__title {
+			margin-bottom: 40px;
+		}
+		&__List {
+			margin-bottom: 2rem;
+			h3 {
+				color: #717171;
+				font-weight: 200;
+				font-style: italic;
+				text-transform: uppercase;
+			}
+			li {
+				color: #ffffff;
+			}
+		}
+		.bg__black {
+			grid-column: 1 / 2;
+			grid-row: 1 / -1;
+			background-color: #252628;
+		}
+		.bg__blue {
+			grid-column: 2 / span 1;
+			grid-row: 1 / -1;
+			background-color: $prime;
+		}
+	}
 }
 
 // Large devices (desktops)
