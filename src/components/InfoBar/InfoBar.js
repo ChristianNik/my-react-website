@@ -12,9 +12,6 @@ function InfoBar({ title, description, hrefCode, hrefDemo, image = '' }) {
 			className={`${style.InfoBar} ${isExpand ? style.InfoBar__expand : ''}`}
 		>
 			<div className={style.InfoBar__Content}>
-				<div>
-					<Button>WDA</Button>
-				</div>
 				<img className={style.InfoBar__image} src={image} alt='' />
 				<h2 className={style.InfoBar__title}>{title}</h2>
 				<p className={style.InfoBar__description}>{description}</p>
