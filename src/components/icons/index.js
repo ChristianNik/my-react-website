@@ -20,6 +20,7 @@ import AdobeXd from './AdobeXd';
 import Car from './Car';
 import Card from './Card';
 import Globe from './Globe';
+import Close from './Close';
 
 const Icon = props => {
 	switch (props.name) {
@@ -57,6 +58,8 @@ const Icon = props => {
 			return <Card {...props} />;
 		case 'globe':
 			return <Globe {...props} />;
+		case 'close':
+			return <Close {...props} />;
 		default:
 			return <Placeholder {...props} />;
 	}
