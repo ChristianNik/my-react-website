@@ -15,12 +15,9 @@ function About() {
 					Über mich
 				</Title>
 				<Text className={style.About__description}>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-					delectus, eius incidunt recusandae eligendi sint odit natus maiores
-					consequatur reprehenderit asperiores voluptatum iste nulla aperiam
-					quia necessitatibus nihil iusto cum obcaecati repellendus corporis
-					similique et. Cum saepe accusamus illo dolorum ad autem quisquam sed
-					magnam error eveniet? Aperiam, impedit culpa.
+					Ich bin Christian. Ich programmiere, designe und lerne immer neue
+					Sachen. Ich wohne in der Nähe von Köln. In meiner Freizeit Jogge und
+					programiere😁 ich.
 				</Text>
 			</div>
 			<div className={style.About__photo}></div>
