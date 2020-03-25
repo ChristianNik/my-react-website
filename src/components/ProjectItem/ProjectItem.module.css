@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-.ProjectItem__image:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.ProjectItem__image:active, .ProjectItem__image:focus, .ProjectItem__image:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }

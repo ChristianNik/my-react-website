@@ -102,7 +102,6 @@ function Projects(props) {
 					}
 				)}
 			</div>
-			<InfoBar {...{ title, description, hrefCode, hrefDemo, image }} />
 		</Page>
 	);
 }
