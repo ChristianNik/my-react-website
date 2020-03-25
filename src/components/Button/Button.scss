@@ -15,6 +15,11 @@
 	color: inherit;
 	text-align: center;
 	background-color: transparent;
+	&:hover {
+		border-color: $primary-dark;
+		background-color: $primary-dark;
+		color: #fff;
+	}
 	&__primary {
 		background-color: $prime;
 		color: #252628;
@@ -30,9 +35,12 @@
 		border: none;
 		background-color: transparent;
 	}
-	&:hover {
-		border-color: $primary-dark;
-		background-color: $primary-dark;
-		color: #fff;
+	&__uppercase {
+		text-transform: uppercase;
+	}
+	&__rounded {
+		border-radius: 99999px;
+		padding: 10px;
+		font-size: 0;
 	}
 }

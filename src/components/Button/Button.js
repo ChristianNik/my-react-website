@@ -6,17 +6,6 @@ import style from './Button.module.css';
 // Icons
 // Components
 
-function getDrink(type) {
-	return (
-		'The drink I chose was ' +
-		{
-			coke: 'Coke',
-			pepsi: 'Pepsi',
-			lemonade: 'Lemonade'
-		}[type]
-	);
-}
-
 function Button(props) {
 	function selectClassNames(init = []) {
 		const classNamesList = init;
@@ -35,7 +24,8 @@ function Button(props) {
 		// Set Button Styles - Switch
 		if (props.type) switchStyle[props.type]();
 		if (props.className) classNamesList.push(props.className);
-		if (props.uppercase) classNamesList.push(style.Text__uppercase);
+		if (props.uppercase) classNamesList.push(style.Button__uppercase);
+		if (props.rounded) classNamesList.push(style.Button__rounded);
 
 		return classNamesList;
 	}
