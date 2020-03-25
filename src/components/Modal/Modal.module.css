@@ -1,0 +1,82 @@
+.Modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(61, 61, 61, 0.85);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.Modal__Container {
+  max-width: 800px;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: -15%;
+  background-color: #070c17;
+  position: relative;
+}
+
+.Modal__Container > * {
+  padding: 10px 25px;
+}
+
+.Modal__close {
+  padding: 0;
+  font-size: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  background-color: #070c17;
+  border-radius: 999px;
+}
+
+.Modal__Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Modal__image {
+  padding: 0;
+  width: 100%;
+}
+
+.Modal__Links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Modal__description {
+  font-family: 'Source Code Pro';
+  font-size: 1em;
+  text-align: left;
+  letter-spacing: 0.4px;
+  color: #9b9b9b;
+  padding-bottom: 55px;
+  width: 70%;
+}
+
+.Modal__line {
+  padding: 0.5px;
+  border: 0.5px solid #9b9b9b;
+  margin: 25px;
+}
+
+.Modal__CreatedBy {
+  margin-top: 50px;
+}

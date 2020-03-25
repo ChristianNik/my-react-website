@@ -1,0 +1,66 @@
+@import '../../scss/variables';
+@import '../../scss/typography';
+
+.Modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: rgba(61, 61, 61, 0.85);
+	display: grid;
+	place-items: center;
+
+	&__Container {
+		max-width: 800px;
+		width: 50vw;
+		margin: 0 auto;
+		margin-top: -15%;
+		background-color: map-get($mono, f);
+		position: relative;
+		& > * {
+			padding: 10px 25px;
+		}
+	}
+	&__close {
+		padding: 0;
+		font-size: 0;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 1001;
+		background-color: map-get($mono, f);
+		border-radius: 999px;
+	}
+	&__Header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__image {
+		padding: 0;
+		width: 100%;
+		// box-shadow: 0px 0px 5px -2px #ffffff;
+	}
+	&__Links {
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+	}
+	&__description {
+		@include text(left);
+		padding-bottom: 55px;
+		width: 70%;
+	}
+	&__line {
+		padding: 0.5px;
+		border: 0.5px solid $gray;
+		margin: 25px;
+	}
+	&__CreatedBy {
+		margin-top: 50px;
+	}
+}
