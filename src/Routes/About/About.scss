@@ -3,25 +3,20 @@
 
 .About {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: 'content foto info';
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr auto 2fr;
+	grid-template-areas: 'content' 'foto' 'info';
 	&__Content {
 		grid-area: content;
-		display: grid;
-		grid-template-columns: 1fr 10fr 1fr;
-		grid-template-rows: auto 1fr;
-		row-gap: 50px;
-		padding-top: 200px;
-		text-align: center;
 	}
 	&__title {
-		grid-column: 2 / 3;
-		@include h1(center);
+		margin: 0px 25px;
+		margin-top: 100px;
+		text-align: left;
 	}
 	&__description {
-		grid-column: 2 / 3;
-		@include text(center);
+		margin: 0px 25px;
+		padding: 30px 0;
 	}
 
 	&__photo {
@@ -30,26 +25,88 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: 60%;
+		background-position: 0% 20%;
+		min-height: 250px;
 		transform: scaleX(-1);
 	}
 
 	&__Info {
 		grid-area: info;
-		display: grid;
-		grid-template-columns: 1fr 10fr 1fr;
-		grid-template-rows: auto 1fr;
-		row-gap: 50px;
-		text-align: center;
-		padding-top: 200px;
 		background-color: $prime;
+		padding: 15px 25px;
+		margin-bottom: 64px;
+
 		.Info__Hobbys {
-			grid-column: 2 / 3;
-			h3 {
-				font-size: 45px;
-				font-weight: 600;
-				margin-bottom: 30px;
+			margin-bottom: 25px;
+		}
+	}
+}
+// Small devices (landscape phones)
+@media (min-width: 0) {
+}
+
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+	.About {
+		&__Info {
+			padding-top: 70px;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+	.About {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: 'content foto info';
+		overflow: hidden;
+		&__Content {
+			grid-area: content;
+			margin: 0 50px;
+		}
+		&__title {
+			margin: 0px;
+			margin-top: 100px;
+			text-align: center;
+		}
+		&__description {
+			margin: 0px;
+			padding: 30px 0;
+			text-align: center;
+		}
+
+		&__photo {
+			grid-area: foto;
+			background-image: url('../../images/Bewerbungs Foto Dark.jpg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 60%;
+			min-height: 250px;
+			transform: scaleX(-1);
+		}
+
+		&__Info {
+			grid-area: info;
+			background-color: $prime;
+			padding: 15px 25px;
+			padding-top: 100px;
+			margin-bottom: 0px;
+
+			.Info__Hobbys {
+				margin-bottom: 25px;
 			}
 		}
 	}
 }
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
+}
+
+/*
+
+*/

@@ -1,0 +1,17 @@
+.IconList {
+	display: flex;
+	flex-direction: column;
+	&__Container {
+		padding-top: 15px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		> :nth-child(even) {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+	&__caption {
+		text-align: center;
+	}
+}

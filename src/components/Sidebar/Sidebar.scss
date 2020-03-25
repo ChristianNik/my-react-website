@@ -1,16 +1,55 @@
-@import '../scss/variables';
-@import '../scss/typography';
+@import '../../scss/variables';
+@import '../../scss/typography';
 
 .Sidebar {
 	position: fixed;
 	width: 64px;
 	height: 100vh;
+	top: 0;
 	background-color: map-get($mono, f);
 	color: #707070;
 	display: grid;
 	grid-template-rows: 1fr 2fr 1fr;
-	&__Logo {
-		width: 32px;
-		height: 32px;
+	grid-template-columns: 1fr;
+	z-index: 100;
+}
+
+// Small devices (landscape phones)
+@media (min-width: 0) {
+	.Sidebar {
+		top: calc(100vh - 64px);
+		width: 100vw;
+		height: 64px;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 2fr 1fr;
 	}
+}
+
+@media (max-width: 575px) {
+	.Sidebar {
+		grid-template-columns: 1fr;
+		ul:first-child,
+		ul:last-child {
+			display: none;
+		}
+	}
+}
+
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+	.Sidebar {
+		top: 0;
+		width: 64px;
+		height: 100vh;
+		grid-template-rows: 1fr 2fr 1fr;
+		grid-template-columns: 1fr;
+	}
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+}
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
 }

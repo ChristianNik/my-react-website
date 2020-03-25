@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+@import '../../scss/typography';
+
+.LinkGroup {
+	display: flex;
+}
+// Small devices (landscape phones)
+@media (min-width: 0) {
+	.LinkGroup {
+		justify-items: center;
+	}
+}
+
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+	.LinkGroup {
+		flex-direction: column;
+	}
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+}
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
+}

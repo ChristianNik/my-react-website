@@ -8,6 +8,9 @@ import mywebsiteV2Image from '../../images/myWebsite v2.png';
 // Components
 import ProjectItem from '../../components/ProjectItem/ProjectItem';
 import InfoBar from '../../components/InfoBar/InfoBar';
+import Page from '../../components/Page/Page';
+import Title from '../../components/Title/Title';
+import Modal from '../../components/Modal/Modal';
 
 function Projects(props) {
 	const [title, setTitle] = useState('');
@@ -15,6 +18,8 @@ function Projects(props) {
 	const [hrefDemo, setHrefDemo] = useState('');
 	const [hrefCode, setHrefCode] = useState('');
 	const [image, setImage] = useState('');
+
+	const [show, setShow] = useState(false);
 
 	const initialState = () => {
 		changeState({
@@ -75,10 +80,10 @@ function Projects(props) {
 	}, []);
 
 	return (
-		<div className={`${style.Projects} page`}>
-			<div className={style.Projects__Header}>
-				<h1>Projekte</h1>
-			</div>
+		<Page className={style.Projects}>
+			<Title regular className={style.Projects__Header}>
+				Projekte
+			</Title>
 			<div className={style.Projects__Content}>
 				{fakeAPIData.map(
 					({ title, description, hrefCode, hrefDemo, image }) => {
@@ -95,13 +100,18 @@ function Projects(props) {
 									})
 								}
 								src={image}
+								onClick={() => setShow(true)}
 							/>
 						);
 					}
 				)}
 			</div>
-			<InfoBar {...{ title, description, hrefCode, hrefDemo, image }} />
-		</div>
+			<Modal
+				show={show}
+				{...{ title, description, hrefCode, hrefDemo, image }}
+				onHide={() => setShow(false)}
+			></Modal>
+		</Page>
 	);
 }
 

@@ -1,5 +1,4 @@
 // Colors
-
 $prim: (
 	prim: #4b7bec,
 	light: #a7bff6,
@@ -39,3 +38,26 @@ $text: $gray;
 $text2: map-get($mono, d);
 
 $background: map-get($mono, f);
+
+// layout
+$layout: (
+	small: 360px,
+	medium: 768px,
+	large: 992px,
+	largeExtra: 1024px
+);
+
+// typography
+$typoTitle: (
+	small: 3rem,
+	medium: 5rem,
+	large: 7rem,
+	largeExtra: 9rem
+);
+
+$typoText: (
+	small: 1rem,
+	medium: 1.1rem,
+	large: 1.2rem,
+	largeExtra: 1.3rem
+);

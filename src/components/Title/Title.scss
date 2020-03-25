@@ -1,0 +1,53 @@
+@import '../../scss/variables';
+@import '../../scss/typography';
+
+.Title {
+	text-align: left;
+	letter-spacing: 0.27px;
+	line-height: 100%;
+	color: $light;
+}
+
+.Title__uppercase {
+	text-transform: uppercase;
+}
+.Title__centered {
+	text-align: center;
+}
+.Title__light {
+	font-weight: 100;
+}
+.Title__regular {
+	font-weight: 400;
+}
+.Title__bold {
+	font-weight: bold;
+}
+
+// Small devices (landscape phones)
+@media (min-width: 0) {
+	.Title {
+		font-size: map-get($typoTitle, small);
+	}
+}
+
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+	.Title {
+		font-size: map-get($typoTitle, medium);
+	}
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+	.Title {
+		font-size: map-get($typoTitle, large);
+	}
+}
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
+	.Title {
+		font-size: map-get($typoTitle, largeExtra);
+	}
+}

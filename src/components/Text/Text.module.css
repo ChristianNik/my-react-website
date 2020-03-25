@@ -1,0 +1,29 @@
+.Text {
+  font-family: 'Source Code Pro';
+  letter-spacing: 0.4px;
+  color: #9b9b9b;
+}
+
+@media (max-width: 0) {
+  .Text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .Text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .Text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Text {
+    font-size: 1.3rem;
+  }
+}

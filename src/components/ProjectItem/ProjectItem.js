@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 // Styles
@@ -8,7 +8,7 @@ import style from './ProjectItem.module.css';
 
 function ProjectItem(props) {
 	return (
-		<div className={style.ProjectItem}>
+		<div className={style.ProjectItem} onClick={props.onClick || ''}>
 			<img
 				onClick={props.func || ''}
 				className={style.ProjectItem__image || ''}

@@ -1,0 +1,50 @@
+.Title {
+  text-align: left;
+  letter-spacing: 0.27px;
+  line-height: 100%;
+  color: #fff;
+}
+
+.Title__uppercase {
+  text-transform: uppercase;
+}
+
+.Title__centered {
+  text-align: center;
+}
+
+.Title__light {
+  font-weight: 100;
+}
+
+.Title__regular {
+  font-weight: 400;
+}
+
+.Title__bold {
+  font-weight: bold;
+}
+
+@media (min-width: 0) {
+  .Title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .Title {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .Title {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Title {
+    font-size: 9rem;
+  }
+}

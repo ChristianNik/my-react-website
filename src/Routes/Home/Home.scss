@@ -4,52 +4,44 @@
 .Home {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 0px 100px;
+	margin: 0px 25px;
 	&__title {
-		@include h1(left);
-		text-transform: uppercase;
-		font-weight: bold;
 	}
-	&__subtitle {
-		@include text(left);
-		font-size: 31px;
-		margin-top: 10px;
-		margin-bottom: 40px;
+	&__text {
 	}
+	&__button {
+		align-self: start;
+	}
+}
 
-	.wave {
-		animation-name: wave-animation;
-		animation-duration: 2.5s;
-		animation-iteration-count: infinite;
-		animation-delay: 1s;
-		transform-origin: 70% 70%;
-		display: inline-block;
-		cursor: default;
+// Small devices (landscape phones)
+@media (min-width: 0) {
+	.Home {
+		justify-self: center;
+		align-self: center;
+		&__title {
+		}
+		&__text {
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+		&__button {
+		}
 	}
+}
 
-	@keyframes wave-animation {
-		0% {
-			transform: rotate(0deg);
-		}
-		10% {
-			transform: rotate(-10deg);
-		}
-		20% {
-			transform: rotate(12deg);
-		}
-		30% {
-			transform: rotate(-10deg);
-		}
-		40% {
-			transform: rotate(9deg);
-		}
-		50% {
-			transform: rotate(0deg);
-		}
-		100% {
-			transform: rotate(0deg);
-		}
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+	.Home {
+		justify-self: left;
+		align-self: center;
 	}
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+}
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
 }

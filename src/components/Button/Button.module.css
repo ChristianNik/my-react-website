@@ -12,6 +12,13 @@
   font-family: 'Arial';
   color: inherit;
   text-align: center;
+  background-color: transparent;
+}
+
+.Button:hover {
+  border-color: #304f97;
+  background-color: #304f97;
+  color: #fff;
 }
 
 .Button__primary {
@@ -32,8 +39,12 @@
   background-color: transparent;
 }
 
-.Button:hover {
-  border-color: #304f97;
-  background-color: #304f97;
-  color: #fff;
+.Button__uppercase {
+  text-transform: uppercase;
+}
+
+.Button__rounded {
+  border-radius: 99999px;
+  padding: 10px;
+  font-size: 0;
 }

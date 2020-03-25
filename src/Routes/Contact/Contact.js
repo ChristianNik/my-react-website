@@ -10,7 +10,7 @@ function Contact() {
 		<div className={`${contactStyle.Contact} page`}>
 			<h1 className={contactStyle.Contact__title}>Contact</h1>
 			<form action=''>
-				<Button type='primary' text='SENDEN' />
+				<Button type='primary'>SENDEN</Button>
 			</form>
 			<div>
 				{/* 

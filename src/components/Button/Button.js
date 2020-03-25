@@ -7,34 +7,55 @@ import style from './Button.module.css';
 // Components
 
 function Button(props) {
-	let nameOfClass = '';
-	switch (props.type) {
-		case 'primary':
-			nameOfClass = style.Button__primary;
-			break;
-		case 'secondary':
-			nameOfClass = style.Button__secondary;
-			break;
-		case 'tertiary':
-			nameOfClass = style.Button__tertiary;
-			break;
-		default:
-			break;
+	function selectClassNames(init = []) {
+		const classNamesList = init;
+
+		const switchStyle = {
+			primary: () => {
+				return classNamesList.push(style.Button__primary);
+			},
+			secondary: () => {
+				return classNamesList.push(style.Button__secondary);
+			},
+			tertiary: () => {
+				return classNamesList.push(style.Button__tertiary);
+			}
+		};
+		// Set Button Styles - Switch
+		if (props.type) switchStyle[props.type]();
+		if (props.className) classNamesList.push(props.className);
+		if (props.uppercase) classNamesList.push(style.Button__uppercase);
+		if (props.rounded) classNamesList.push(style.Button__rounded);
+
+		return classNamesList;
 	}
-	return props.href ? (
-		<a
-			target='_blank'
-			href={props.href}
-			rel='noopener noreferrer'
-			className={`${style.Button} ${nameOfClass}`}
-		>
-			{props.text}
-		</a>
-	) : (
-		<Link to={props.to || ''} className={`${style.Button} ${nameOfClass}`}>
-			{props.text}
-		</Link>
-	);
+
+	const classNames = selectClassNames([style.Button]).join(' ');
+
+	if (props.href) {
+		return (
+			<a
+				target='_blank'
+				href={props.href}
+				rel='noopener noreferrer'
+				className={classNames}
+			>
+				{props.children}
+			</a>
+		);
+	} else if (props.onClick) {
+		return (
+			<button className={classNames} onClick={props.onClick}>
+				{props.children}
+			</button>
+		);
+	} else {
+		return (
+			<Link to={props.to || ''} className={classNames}>
+				{props.children}
+			</Link>
+		);
+	}
 }
 
 export default Button;

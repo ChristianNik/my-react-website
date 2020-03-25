@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+@import '../../scss/typography';
+
+.Text {
+	font-family: 'Source Code Pro';
+	letter-spacing: 0.4px;
+	color: $text;
+}
+
+// Small devices (landscape phones)
+@media (max-width: 0) {
+	.Text {
+		font-size: map-get($typoText, small);
+	}
+}
+
+// Medium devices (tablets)
+@media (min-width: map-get($layout, medium)) {
+	.Text {
+		font-size: map-get($typoText, medium);
+	}
+}
+
+// Large devices (desktops)
+@media (min-width: map-get($layout, large)) {
+	.Text {
+		font-size: map-get($typoText, large);
+	}
+}
+
+// Extra large devices (large desktops)
+@media (min-width: map-get($layout, largeExtra)) {
+	.Text {
+		font-size: map-get($typoText, largeExtra);
+	}
+}

@@ -16,7 +16,9 @@ function IconWithText({
 	return (
 		<div className={`${style.IconWithText} ${flowDirection}`}>
 			<Icon name={name} fill={fill} width={width} />
-			<p className={style.IconWithText__text}>{text}</p>
+			<p style={{ color: fill || '' }} className={style.IconWithText__text}>
+				{text}
+			</p>
 		</div>
 	);
 }

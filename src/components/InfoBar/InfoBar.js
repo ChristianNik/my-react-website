@@ -18,7 +18,9 @@ function InfoBar({ title, description, hrefCode, hrefDemo, image = '' }) {
 				<hr className={style.InfoBar__line} />
 				<div style={{ display: 'flex' }}>
 					{hrefDemo ? (
-						<Button href={hrefDemo} type='primary' text='DEMO' />
+						<Button href={hrefDemo} type='primary'>
+							DEMO
+						</Button>
 					) : (
 						''
 					)}
@@ -30,7 +32,7 @@ function InfoBar({ title, description, hrefCode, hrefDemo, image = '' }) {
 							width: '100%'
 						}}
 					>
-						<a target='_blank' href={hrefCode}>
+						<a target='_blank' rel='noopener noreferrer' href={hrefCode}>
 							<IconBtn name='github' />
 						</a>
 						<IconBtn name='dots' />

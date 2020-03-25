@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+//import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // Components
 import Sidebar from './components/Sidebar/Sidebar';
 // Routes
@@ -10,29 +10,21 @@ import Skills from './Routes/Skills/Skills';
 import Contact from './Routes/Contact/Contact';
 import Projects from './Routes/Projects/Projects';
 // Styles
-import './App.css';
+import style from './App.module.css';
 // Icons
 
 function App() {
 	return (
 		<Router>
-			<div className='App'>
+			<div className={style.App}>
 				<Sidebar />
-				<Route
-					render={({ location }) => (
-						<TransitionGroup>
-							<CSSTransition key={location.key} timeout={300} classNames='fade'>
-								<Switch location={location}>
-									<Route exact path='/' component={Home} />
-									<Route path='/about' component={About} />
-									<Route path='/skills' component={Skills} />
-									<Route path='/contact' component={Contact} />
-									<Route path='/projects' component={Projects} />
-								</Switch>
-							</CSSTransition>
-						</TransitionGroup>
-					)}
-				/>
+				<Switch>
+					<Route exact path='/' component={Home} />
+					<Route path='/about' component={About} />
+					<Route path='/skills' component={Skills} />
+					<Route path='/contact' component={Contact} />
+					<Route path='/projects' component={Projects} />
+				</Switch>
 			</div>
 		</Router>
 	);

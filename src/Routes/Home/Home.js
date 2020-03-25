@@ -3,21 +3,29 @@ import React from 'react';
 import Button from '../../components/Button/Button';
 // Styles
 import style from './Home.module.css';
+import animation from '../../scss/animation.module.css';
+import Page from '../../components/Page/Page';
+import Title from '../../components/Title/Title';
+import Text from '../../components/Text/Text';
+
 // Icons
 function Home() {
 	return (
-		<div className={`${style.Home} page`}>
-			<h1 className={style.Home__title}>
-				Hey, <span className={style.wave}>👋</span>
+		<Page className={style.Home}>
+			<Title className={style.Home__title} uppercase>
+				Hey, <span className={animation.wave}>👋</span>
 				<br />
 				ich bin <br />
 				Christian.
-			</h1>
-			<p className={style.Home__subtitle}>
+			</Title>
+
+			<Text className={style.Home__text}>
 				Informationstechnischer Assistent <br /> Junior Frontend Entwickler
-			</p>
-			<Button type='secondary' text='Meine Projekte' to='/projects' />
-		</div>
+			</Text>
+			<Button className={style.Home__button} type='secondary' to='/projects'>
+				Meine Projekte
+			</Button>
+		</Page>
 	);
 }
 
