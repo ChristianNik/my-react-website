@@ -9,7 +9,7 @@ import linkItemStyle from './LinkItem.module.css';
 
 function LinkItem(props) {
 	return (
-		<li className={linkItemStyle.LinkItem}>
+		<li className={linkItemStyle.LinkItem} style={props.style}>
 			{props.href ? (
 				<a
 					className={linkItemStyle.LinkItem__link}
@@ -44,5 +44,5 @@ LinkItem.propTypes = {
 	iconHeight: PropTypes.string,
 	text: PropTypes.string,
 	noActiveStyle: PropTypes.bool,
-	noHoverStyle: PropTypes.bool
+	noHoverStyle: PropTypes.bool,
 };

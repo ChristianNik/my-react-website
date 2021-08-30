@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 //import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // Components
 import Sidebar from './components/Sidebar/Sidebar';
+import UnderConstruction from './components/UnderConstruction.style';
 // Routes
 import Home from './Routes/Home/Home';
 import About from './Routes/About/About';
@@ -14,8 +15,15 @@ import style from './App.module.css';
 // Icons
 
 function App() {
+	const [showUnderConstruction, setShowUnderConstruction] = useState(true);
 	return (
 		<Router>
+			<UnderConstruction
+				visible={showUnderConstruction}
+				onClick={() => {
+					setShowUnderConstruction(false);
+				}}
+			/>
 			<div className={style.App}>
 				<Sidebar />
 				<Switch>

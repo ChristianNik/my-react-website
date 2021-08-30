@@ -15,8 +15,16 @@ function Sidebar() {
 	return (
 		<nav className={sidebarStyle.Sidebar}>
 			<LinkGroup>
-				<LinkItem to='/' text='logo' noActiveStyle>
-					<Icon name='logo' width={START_ICON_SIZE} />
+				<LinkItem
+					to='/'
+					text='logo'
+					noActiveStyle
+					style={{
+						fontSize: `${START_ICON_SIZE}px`,
+						cursor: 'default',
+					}}
+				>
+					🚧
 				</LinkItem>
 			</LinkGroup>
 			<LinkGroup position='center'>
